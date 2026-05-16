@@ -1,316 +1,613 @@
 <!DOCTYPE html>
-<html class="light scroll-smooth" lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dr. Shravan Shetty | Orthodontist, Academician & Researcher</title>
+<title>Dr. Shravan Shetty — Orthodontist · Academician · Researcher</title>
 <meta name="description" content="Dr. Shravan Shetty, Assistant Professor of Orthodontics at MCODS Mangalore. Clear aligner specialist, published researcher, and international speaker in orthodontic biomechanics."/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23162839'/%3E%3Ctext x='50' y='68' font-family='Playfair Display, serif' font-size='56' font-weight='700' fill='%23e9c349' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23162839'/%3E%3Ctext x='50' y='70' font-family='Playfair Display,serif' font-size='60' font-weight='700' fill='%23c9a227' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,900&family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet"/>
 <script>
   tailwind.config = {
-    darkMode: "class",
     theme: {
       extend: {
         colors: {
-          "surface-dim": "#d7dbda",
-          "secondary-container": "#d4e6e5",
-          "outline-variant": "#c4c6cd",
-          "inverse-on-surface": "#eef1f0",
-          "tertiary-fixed-dim": "#e9c349",
-          "on-primary-container": "#96a9be",
-          "on-primary-fixed": "#091d2e",
-          "on-secondary-container": "#576867",
-          "primary-fixed-dim": "#b5c8df",
-          "on-tertiary-fixed": "#241a00",
-          "tertiary-container": "#cca730",
-          "on-primary-fixed-variant": "#36485b",
-          "primary": "#162839",
-          "secondary": "#516161",
-          "on-tertiary-fixed-variant": "#574500",
-          "on-secondary-fixed-variant": "#3a4a49",
-          "surface-container-high": "#e6e9e8",
-          "primary-container": "#2c3e50",
-          "surface-variant": "#e0e3e2",
-          "surface-tint": "#4e6073",
-          "on-primary": "#ffffff",
-          "on-secondary-fixed": "#0e1e1e",
-          "surface-container-highest": "#e0e3e2",
-          "on-surface": "#181c1c",
-          "surface-bright": "#f7faf9",
-          "on-tertiary": "#ffffff",
-          "background": "#f7faf9",
-          "tertiary": "#735c00",
-          "secondary-fixed": "#d4e6e5",
-          "surface-container": "#ebeeed",
-          "surface-container-low": "#f1f4f3",
-          "secondary-fixed-dim": "#b8cac9",
-          "on-background": "#181c1c",
-          "primary-fixed": "#d1e4fb",
-          "on-surface-variant": "#43474c",
-          "inverse-surface": "#2d3131",
-          "inverse-primary": "#b5c8df",
-          "on-secondary": "#ffffff",
-          "tertiary-fixed": "#ffe088",
-          "surface-container-lowest": "#ffffff",
-          "outline": "#74777d",
-          "surface": "#f7faf9",
-          "on-tertiary-container": "#4f3d00"
-        },
-        borderRadius: {
-          DEFAULT: "0.25rem",
-          lg: "0.5rem",
-          xl: "0.75rem",
-          "2xl": "1rem",
-          "3xl": "1.5rem",
-          full: "9999px"
-        },
-        spacing: {
-          "section-gap-lg": "120px",
-          "section-gap-md": "80px",
-          "gutter": "24px",
-          "margin-mobile": "20px",
-          "unit": "8px",
-          "container-max": "1280px"
+          paper:   '#f4f1ea',   // warm cream
+          ivory:   '#faf8f3',
+          slate:   '#162839',
+          ink:     '#0e1820',
+          mint:    '#d4e6e5',
+          mintdk:  '#a8c4c2',
+          gold:    '#b8941f',
+          goldlt:  '#e9c349',
+          quiet:   '#5b6166',
+          rule:    '#dcd5c4'
         },
         fontFamily: {
-          serif: ["'Playfair Display'", "serif"],
-          sans: ["Inter", "sans-serif"]
-        },
-        fontSize: {
-          "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
-          "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
-          "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-          "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
-          "headline-lg": ["36px", { lineHeight: "1.3", fontWeight: "600" }],
-          "headline-xl-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
-          "headline-xl": ["56px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }]
+          display: ['"Playfair Display"','serif'],
+          serif:   ['Fraunces','"Playfair Display"','serif'],
+          sans:    ['Inter','system-ui','sans-serif']
         }
       }
     }
   };
 </script>
 <style>
-  body { font-family: 'Inter', sans-serif; }
-  .font-serif { font-family: 'Playfair Display', serif; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .glass-card {
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(224, 230, 228, 0.6);
+  :root {
+    --gutter: 24px;
+    --container: 1320px;
   }
-  .section-anchor { scroll-margin-top: 96px; }
-  /* Mobile nav */
-  #mobile-menu { transition: max-height 0.3s ease; max-height: 0; overflow: hidden; }
-  #mobile-menu.open { max-height: 360px; }
-  /* Nav link active indicator */
-  .nav-link { position: relative; padding-bottom: 6px; }
-  .nav-link.active { color: #162839; }
-  .nav-link.active::after {
+  html, body { background: #f4f1ea; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #0e1820;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: #162839; color: #f4f1ea; }
+
+  /* Paper grain noise overlay */
+  body::before {
     content: '';
-    position: absolute;
-    left: 0; right: 0; bottom: 0;
-    height: 2px;
-    background: #e9c349;
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    opacity: .35; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  main, footer, nav { position: relative; z-index: 2; }
+
+  /* Typographic refinements */
+  .display { font-family: 'Playfair Display', serif; font-feature-settings: "lnum","kern","liga"; }
+  .serif   { font-family: 'Fraunces', 'Playfair Display', serif; font-feature-settings: "lnum","kern","liga"; }
+  .smcaps  { font-variant-caps: all-small-caps; letter-spacing: .22em; }
+  .num     { font-variant-numeric: lining-nums tabular-nums; }
+
+  /* Section anchors offset for sticky nav */
+  section[id] { scroll-margin-top: 96px; }
+
+  /* Hairline rules */
+  .rule { background: #c8c0ac; height: 1px; }
+  .vrule { background: #c8c0ac; width: 1px; }
+
+  /* ===================== ANIMATIONS ===================== */
+  /* Reveal-on-scroll */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 900ms cubic-bezier(.19,.78,.27,1), transform 900ms cubic-bezier(.19,.78,.27,1);
+    will-change: opacity, transform;
+  }
+  [data-reveal].in { opacity: 1; transform: none; }
+  [data-reveal][data-d="1"] { transition-delay: 80ms; }
+  [data-reveal][data-d="2"] { transition-delay: 160ms; }
+  [data-reveal][data-d="3"] { transition-delay: 240ms; }
+  [data-reveal][data-d="4"] { transition-delay: 340ms; }
+  [data-reveal][data-d="5"] { transition-delay: 440ms; }
+  [data-reveal][data-d="6"] { transition-delay: 540ms; }
+
+  /* Hero page-load: line-by-line reveal */
+  @keyframes maskUp {
+    0%   { transform: translateY(110%); }
+    100% { transform: translateY(0); }
+  }
+  .mask-line { display: block; overflow: hidden; padding-bottom: .04em; }
+  .mask-line > span { display: inline-block; transform: translateY(110%); animation: maskUp 1100ms cubic-bezier(.2,.78,.2,1) forwards; }
+  .mask-line[data-d="1"] > span { animation-delay: 120ms; }
+  .mask-line[data-d="2"] > span { animation-delay: 240ms; }
+  .mask-line[data-d="3"] > span { animation-delay: 360ms; }
+  .mask-line[data-d="4"] > span { animation-delay: 480ms; }
+  .mask-line[data-d="5"] > span { animation-delay: 600ms; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: none; }
+  }
+  .fade-in { opacity: 0; animation: fadeIn 1200ms cubic-bezier(.19,.78,.27,1) forwards; }
+  .fade-in[data-d="1"] { animation-delay: 600ms; }
+  .fade-in[data-d="2"] { animation-delay: 800ms; }
+  .fade-in[data-d="3"] { animation-delay: 1000ms; }
+  .fade-in[data-d="4"] { animation-delay: 1200ms; }
+
+  /* Marquee */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee { display: flex; width: max-content; animation: marquee 55s linear infinite; }
+  .marquee:hover { animation-play-state: paused; }
+
+  /* Subtle decorative breathing */
+  @keyframes drift {
+    0%,100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(2%, -2%) scale(1.04); }
+  }
+  .drift { animation: drift 16s ease-in-out infinite; }
+  .drift-slow { animation: drift 28s ease-in-out infinite; }
+
+  /* Hero photo float */
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .float-slow { animation: float 7s ease-in-out infinite; }
+
+  /* Card hover lift */
+  .card-lift { transition: transform 520ms cubic-bezier(.19,.78,.27,1), box-shadow 520ms ease; }
+  .card-lift:hover { transform: translateY(-6px); box-shadow: 0 28px 60px -28px rgba(22,40,57,.25); }
+
+  /* Underline-on-hover for index list */
+  .indexrow { position: relative; }
+  .indexrow::after {
+    content: ''; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%;
+    background: #b8941f; transform: scaleX(0); transform-origin: left;
+    transition: transform 520ms cubic-bezier(.19,.78,.27,1);
+  }
+  .indexrow:hover::after { transform: scaleX(1); }
+  .indexrow .arrow { transition: transform 380ms cubic-bezier(.19,.78,.27,1), opacity 380ms ease; opacity: 0; transform: translateX(-8px); }
+  .indexrow:hover .arrow { opacity: 1; transform: translateX(0); }
+  .indexrow:hover .row-title { color: #162839; }
+
+  /* Image plate frame */
+  .plate {
+    background: #faf8f3;
+    padding: 14px 14px 12px;
+    box-shadow:
+      0 1px 0 rgba(184,148,31,.18),
+      0 30px 60px -30px rgba(22,40,57,.18);
+    border: 1px solid #e4ddc7;
+  }
+  .plate img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* Duotone-ish editorial photo treatment (works fine on low-res JPGs) */
+  .photo-tone img {
+    filter: contrast(1.04) saturate(.92);
+    transition: filter 700ms ease, transform 1200ms cubic-bezier(.19,.78,.27,1);
+  }
+  .photo-tone:hover img { filter: contrast(1.08) saturate(1); transform: scale(1.015); }
+
+  /* Mag-style hover caption */
+  .cap-wrap { position: relative; overflow: hidden; }
+  .cap-wrap .cap {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 22px 24px;
+    color: #faf8f3;
+    background: linear-gradient(to top, rgba(14,24,32,.92), rgba(14,24,32,.4) 65%, transparent);
+    transform: translateY(40%); opacity: 0;
+    transition: transform 620ms cubic-bezier(.19,.78,.27,1), opacity 620ms ease;
+  }
+  .cap-wrap:hover .cap { transform: translateY(0); opacity: 1; }
+  .cap-wrap:hover img { transform: scale(1.04); }
+
+  /* Decorative big numerals */
+  .bignum {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(22,40,57,.16);
+    line-height: .8;
+    user-select: none;
+  }
+
+  /* Nav active indicator */
+  .navlink { position: relative; padding-bottom: 6px; }
+  .navlink::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px;
+    background: #b8941f; transform: scaleX(0); transform-origin: left;
+    transition: transform 420ms cubic-bezier(.19,.78,.27,1);
+  }
+  .navlink:hover::after, .navlink.active::after { transform: scaleX(1); }
+  .navlink.active { color: #162839; }
+
+  /* Mobile menu */
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+  #mobile-menu.open { max-height: 460px; }
+
+  /* Pill */
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px; border-radius: 999px;
+    background: #faf8f3; border: 1px solid #d8d1bd; color: #162839;
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600;
+  }
+  .pill .dot { width: 5px; height: 5px; border-radius: 50%; background: #b8941f; }
+
+  /* Decorative diagonal */
+  .diag-rule {
+    background: repeating-linear-gradient(135deg, transparent 0 7px, #c8c0ac 7px 8px);
+    height: 1px; opacity: .65;
+  }
+
+  /* Section heading kicker line */
+  .kicker { display: inline-flex; align-items: center; gap: 14px; }
+  .kicker .line { width: 48px; height: 1px; background: #b8941f; }
+
+  /* Bullet for chip */
+  .chip-dark {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 14px; border-radius: 999px;
+    background: rgba(244,241,234,.08); border: 1px solid rgba(244,241,234,.18);
+    color: #faf8f3;
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600;
+  }
+
+  /* Footer scroll-to-top arrow */
+  .top-arrow { transition: transform 600ms cubic-bezier(.19,.78,.27,1); }
+  .top-arrow:hover { transform: translateY(-6px); }
+
+  /* Hero ornament svg lines draw */
+  @keyframes draw {
+    from { stroke-dashoffset: 400; }
+    to { stroke-dashoffset: 0; }
+  }
+  .draw-line { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1800ms cubic-bezier(.19,.78,.27,1) forwards; animation-delay: 800ms; }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0ms !important; animation-delay: 0ms !important;
+      transition-duration: 0ms !important; transition-delay: 0ms !important;
+    }
+    [data-reveal] { opacity: 1; transform: none; }
+    .mask-line > span { transform: none; }
   }
 </style>
 </head>
-<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<body>
 
-<!-- ============ NAVIGATION ============ -->
-<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
-  <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
-    <a href="#home" class="font-serif text-headline-md font-bold text-primary leading-none">
-      Dr. Shravan Shetty
+<!-- =================== NAV =================== -->
+<nav class="sticky top-0 z-50 backdrop-blur-md bg-paper/85 border-b border-rule">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[72px]">
+    <a href="#home" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 rounded-full bg-slate text-goldlt grid place-items-center display font-bold text-xl leading-none">S</div>
+      <div class="hidden sm:block leading-tight">
+        <div class="display text-slate text-lg font-semibold">Dr. Shravan Shetty</div>
+        <div class="smcaps text-[10px] text-quiet">Orthodontics · MCODS Mangalore</div>
+      </div>
     </a>
-    <div class="hidden lg:flex items-center space-x-8">
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#home">Home</a>
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#academic">Academic</a>
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#research">Research</a>
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#expertise">Expertise</a>
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#publications">Publications</a>
-      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+    <div class="hidden lg:flex items-center gap-9">
+      <a class="navlink smcaps text-[11px] text-quiet" href="#about">Bio</a>
+      <a class="navlink smcaps text-[11px] text-quiet" href="#academic">Academic</a>
+      <a class="navlink smcaps text-[11px] text-quiet" href="#research">Research</a>
+      <a class="navlink smcaps text-[11px] text-quiet" href="#expertise">Expertise</a>
+      <a class="navlink smcaps text-[11px] text-quiet" href="#publications">Publications</a>
+      <a class="navlink smcaps text-[11px] text-quiet" href="#contact">Contact</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="#contact" class="hidden md:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-lg text-label-caps hover:bg-primary-container transition-all active:scale-95">
-        Get in Touch
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-slate text-paper px-5 py-2.5 rounded-full smcaps text-[11px] hover:bg-ink transition-colors">
+        <span class="w-1.5 h-1.5 rounded-full bg-goldlt"></span> Get in touch
       </a>
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-surface-container" aria-label="Toggle menu">
-        <span class="material-symbols-outlined text-primary">menu</span>
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Toggle menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-slate"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </div>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="lg:hidden border-t border-outline-variant/30 bg-surface">
-    <div class="px-gutter py-4 flex flex-col space-y-3">
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#home">Home</a>
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#academic">Academic</a>
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#research">Research</a>
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#expertise">Expertise</a>
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#publications">Publications</a>
-      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#contact">Contact</a>
+  <div id="mobile-menu" class="lg:hidden bg-paper border-t border-rule">
+    <div class="px-6 py-5 flex flex-col gap-4">
+      <a href="#about" class="smcaps text-xs text-quiet">Bio</a>
+      <a href="#academic" class="smcaps text-xs text-quiet">Academic</a>
+      <a href="#research" class="smcaps text-xs text-quiet">Research</a>
+      <a href="#expertise" class="smcaps text-xs text-quiet">Expertise</a>
+      <a href="#publications" class="smcaps text-xs text-quiet">Publications</a>
+      <a href="#contact" class="smcaps text-xs text-quiet">Contact</a>
     </div>
   </div>
 </nav>
 
 <main>
 
-<!-- ============ HERO ============ -->
-<section id="home" class="section-anchor relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
-  <!-- Decorative background blobs -->
-  <div class="absolute top-20 -right-32 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
-  <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- =================== HERO (editorial cover) =================== -->
+<section id="home" class="relative pt-12 lg:pt-20 pb-24 lg:pb-32 overflow-hidden">
+  <!-- decorative mint blob -->
+  <div class="absolute -top-32 -right-40 w-[640px] h-[640px] rounded-full bg-mint/45 blur-3xl drift-slow pointer-events-none"></div>
+  <div class="absolute bottom-0 -left-32 w-[480px] h-[480px] rounded-full bg-goldlt/20 blur-3xl drift pointer-events-none"></div>
 
-  <div class="relative max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-    <div class="md:col-span-7">
-      <span class="text-label-caps text-tertiary-fixed-dim uppercase tracking-widest mb-5 block" style="color:#a8861f;">
-        Orthodontist · Academician · Researcher
-      </span>
-      <h1 class="font-serif text-headline-xl-mobile md:text-headline-xl text-primary mb-6">
-        Dr. Shravan Shetty
-      </h1>
-      <p class="text-body-lg text-on-surface-variant max-w-xl mb-4">
-        Assistant Professor, Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore.
-      </p>
-      <p class="text-body-md text-secondary max-w-xl mb-8 italic">
-        Bridging clinical precision with digital innovation in modern orthodontic care.
-      </p>
-      <div class="flex flex-wrap gap-2 mb-10">
-        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Clear Aligner Specialist</span>
-        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Digital Planning</span>
-        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">International Speaker</span>
-        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Published Researcher</span>
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 relative">
+    <!-- Magazine top strip -->
+    <div class="flex items-center justify-between mb-10 lg:mb-16 fade-in">
+      <div class="flex items-center gap-4">
+        <span class="smcaps text-[11px] text-quiet">Vol. 01</span>
+        <span class="rule w-12 h-px hidden sm:block"></span>
+        <span class="smcaps text-[11px] text-quiet">Mangalore · India</span>
       </div>
-      <div class="flex flex-wrap gap-4">
-        <a href="#publications" class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-4 rounded-lg text-label-caps hover:bg-primary-container transition-all active:scale-95 shadow-sm">
-          View Publications
-          <span class="material-symbols-outlined text-base">arrow_forward</span>
-        </a>
-        <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-secondary-fixed text-primary px-7 py-4 rounded-lg text-label-caps hover:bg-secondary-fixed-dim transition-all">
-          <span class="material-symbols-outlined text-base">link</span>
-          Connect on LinkedIn
-        </a>
+      <div class="flex items-center gap-4">
+        <span class="smcaps text-[11px] text-quiet hidden sm:block">An Academic Portfolio</span>
+        <span class="display italic text-quiet">№ <span class="num">001</span></span>
       </div>
     </div>
 
-    <div class="md:col-span-5 relative mt-14 md:mt-0">
-      <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border-4 border-surface-container-lowest max-w-md mx-auto">
-        <img alt="Dr. Shravan Shetty" class="w-full h-full object-cover" src="images/dr-shravan-shetty.jpg"/>
+    <div class="grid grid-cols-12 gap-6 lg:gap-10 items-start">
+
+      <!-- LEFT: typography block -->
+      <div class="col-span-12 lg:col-span-7 relative">
+        <div class="kicker mb-6 fade-in" data-d="1">
+          <span class="line"></span>
+          <span class="smcaps text-[11px] text-gold">Orthodontist · Academician · Researcher</span>
+        </div>
+
+        <h1 class="display text-slate leading-[0.92] text-[56px] sm:text-[88px] lg:text-[124px] font-bold tracking-tight">
+          <span class="mask-line" data-d="1"><span>Dr.&nbsp;Shravan</span></span>
+          <span class="mask-line italic font-medium text-gold" data-d="2"><span>Shetty</span></span>
+        </h1>
+
+        <!-- Subhead row -->
+        <div class="mt-8 lg:mt-10 grid grid-cols-12 gap-6 lg:gap-10">
+          <div class="col-span-12 sm:col-span-7 fade-in" data-d="2">
+            <p class="serif text-[20px] lg:text-[22px] leading-[1.55] text-ink">
+              <span class="display italic text-gold">Assistant Professor</span> at the Department of Orthodontics &amp; Dentofacial Orthopaedics, <span class="underline decoration-gold underline-offset-4">Manipal College of Dental Sciences</span>, Mangalore.
+            </p>
+            <p class="serif italic text-[17px] text-quiet mt-5">
+              Bridging clinical precision with digital innovation in modern orthodontic care.
+            </p>
+          </div>
+          <div class="col-span-12 sm:col-span-5 fade-in" data-d="3">
+            <div class="border-l border-rule pl-6 space-y-3">
+              <div>
+                <div class="smcaps text-[10px] text-quiet mb-1">Specialty</div>
+                <div class="serif text-base text-slate">Clear Aligner Therapy &amp; Biomechanics</div>
+              </div>
+              <div class="rule"></div>
+              <div>
+                <div class="smcaps text-[10px] text-quiet mb-1">Practising since</div>
+                <div class="serif text-base text-slate num">2017</div>
+              </div>
+              <div class="rule"></div>
+              <div>
+                <div class="smcaps text-[10px] text-quiet mb-1">Education</div>
+                <div class="serif text-base text-slate">MDS · SDM Dharwad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA row -->
+        <div class="mt-10 lg:mt-12 flex flex-wrap gap-3 fade-in" data-d="4">
+          <a href="#publications" class="group inline-flex items-center gap-3 bg-slate text-paper px-6 py-4 rounded-full hover:bg-ink transition-colors">
+            <span class="smcaps text-[11px]">Read Publications</span>
+            <span class="w-7 h-7 rounded-full bg-goldlt grid place-items-center text-slate group-hover:rotate-45 transition-transform duration-500">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="inline-flex items-center gap-3 border border-slate/30 text-slate px-6 py-4 rounded-full hover:bg-slate hover:text-paper transition-colors">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <span class="smcaps text-[11px]">LinkedIn</span>
+          </a>
+        </div>
+
+        <!-- Decorative drawn line -->
+        <svg class="absolute -bottom-20 left-0 hidden lg:block pointer-events-none" width="300" height="100" viewBox="0 0 300 100" fill="none">
+          <path class="draw-line" d="M2 80 C 80 80, 110 30, 180 30 C 240 30, 270 60, 298 60" stroke="#b8941f" stroke-width="1.2"/>
+        </svg>
       </div>
-      <div class="absolute -bottom-6 -left-2 md:-left-6 glass-card p-5 md:p-6 rounded-2xl shadow-lg max-w-[260px]">
-        <p class="font-serif text-headline-md text-primary italic leading-snug mb-2">
-          "Precision is a discipline, not an event."
-        </p>
-        <p class="text-body-sm text-secondary">— Dr. Shravan Shetty</p>
+
+      <!-- RIGHT: editorial portrait -->
+      <div class="col-span-12 lg:col-span-5 relative mt-6 lg:mt-0">
+        <!-- Floating issue tag -->
+        <div class="absolute -top-4 -left-4 lg:left-2 z-20 fade-in" data-d="2">
+          <div class="bg-slate text-paper rounded-full pl-2 pr-5 py-2 flex items-center gap-3 shadow-xl shadow-slate/20">
+            <span class="w-7 h-7 rounded-full bg-goldlt text-slate grid place-items-center display font-bold text-sm">1</span>
+            <span class="smcaps text-[10px]">Featured Profile</span>
+          </div>
+        </div>
+
+        <!-- Portrait plate -->
+        <div class="relative mx-auto max-w-[360px] lg:ml-auto lg:mr-0 float-slow fade-in" data-d="1">
+          <div class="plate rounded-[2px] photo-tone cap-wrap">
+            <div class="overflow-hidden" style="aspect-ratio: 4 / 5;">
+              <img src="images/dr-shravan-shetty.jpg" alt="Portrait of Dr. Shravan Shetty"/>
+            </div>
+            <!-- Plate caption -->
+            <div class="pt-3 flex items-center justify-between text-quiet">
+              <span class="smcaps text-[10px]">Plate I · Portrait</span>
+              <span class="serif italic text-sm">est. 2017</span>
+            </div>
+          </div>
+          <!-- Decorative ornaments -->
+          <div class="absolute -top-4 -right-4 w-20 h-20 border border-gold/50 rounded-full -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-mint -z-10"></div>
+        </div>
+
+        <!-- Pull quote card overlapping below -->
+        <div class="relative mt-8 lg:-mt-6 lg:ml-[-40px] max-w-[360px] mx-auto lg:mx-0 fade-in" data-d="3">
+          <div class="bg-ivory/90 backdrop-blur-md border border-rule p-6 rounded-sm shadow-lg shadow-slate/10">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#b8941f" class="mb-2"><path d="M9 11H5a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v6h6v-6zm10 0h-4a4 4 0 0 1 4-4V5a6 6 0 0 0-6 6v6h6v-6z"/></svg>
+            <p class="serif italic text-[18px] text-slate leading-snug">"Precision is a discipline, not an event."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="rule flex-1"></div>
+              <span class="smcaps text-[10px] text-quiet">Dr. Shravan Shetty</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ STATS STRIP ============ -->
-<section class="bg-surface-container-low py-12 border-y border-outline-variant/30">
-  <div class="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
-    <div>
-      <div class="font-serif text-headline-lg text-primary mb-1">10+</div>
-      <p class="text-body-sm text-on-surface-variant">Years in Clinical Practice</p>
+<!-- =================== MARQUEE BAND =================== -->
+<section class="bg-slate text-paper py-6 overflow-hidden border-y border-slate/30">
+  <div class="marquee whitespace-nowrap">
+    <div class="flex items-center gap-12 px-6">
+      <span class="display italic text-[22px]">MDS Orthodontics</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Clear Aligner Specialist</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Digital Planning</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">International Speaker</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Published Researcher</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Life Member IOS</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Life Member IDA</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Assistant Professor MCODS</span><span class="text-goldlt">✦</span>
     </div>
-    <div>
-      <div class="font-serif text-headline-lg text-primary mb-1">7</div>
-      <p class="text-body-sm text-on-surface-variant">Peer-Reviewed Publications</p>
-    </div>
-    <div>
-      <div class="font-serif text-headline-lg text-primary mb-1">MDS</div>
-      <p class="text-body-sm text-on-surface-variant">Orthodontics, SDM Dharwad</p>
-    </div>
-    <div>
-      <div class="font-serif text-headline-lg text-primary mb-1">MCODS</div>
-      <p class="text-body-sm text-on-surface-variant">Mangalore, 2017 – present</p>
+    <div class="flex items-center gap-12 px-6" aria-hidden="true">
+      <span class="display italic text-[22px]">MDS Orthodontics</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Clear Aligner Specialist</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Digital Planning</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">International Speaker</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Published Researcher</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Life Member IOS</span><span class="text-goldlt">✦</span>
+      <span class="display italic text-[22px]">Life Member IDA</span><span class="text-goldlt">✦</span>
+      <span class="smcaps text-xs tracking-[0.3em]">Assistant Professor MCODS</span><span class="text-goldlt">✦</span>
     </div>
   </div>
 </section>
 
-<!-- ============ ACADEMIC ============ -->
-<section id="academic" class="section-anchor py-section-gap-lg">
-  <div class="max-w-container-max mx-auto px-gutter">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">01 · Academic</span>
-      <h2 class="font-serif text-headline-lg text-primary mb-4">Role &amp; Teaching</h2>
-      <p class="text-body-md text-on-surface-variant">
-        A decade of academic medicine — shaping the next generation of orthodontists while contributing to institutional clinical governance.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-      <!-- Current Role -->
-      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary">co_present</span>
-        </div>
-        <h3 class="font-serif text-headline-md text-primary mb-3">Current Role</h3>
-        <p class="text-body-md text-on-surface-variant mb-4">
-          Assistant Professor in the Department of Orthodontics &amp; Dentofacial Orthopaedics at Manipal College of Dental Sciences, Mangalore.
+<!-- =================== BIO STATEMENT =================== -->
+<section id="about" class="py-24 lg:py-36">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-12 gap-6 lg:gap-12">
+      <div class="col-span-12 lg:col-span-3" data-reveal>
+        <div class="kicker mb-4"><span class="line"></span><span class="smcaps text-[11px] text-gold">A Short Bio</span></div>
+        <h2 class="display text-slate text-[44px] lg:text-[56px] leading-[0.95] font-bold">
+          Of bone, <em class="font-medium text-gold">brackets</em> &amp; <span class="block">bytes.</span>
+        </h2>
+      </div>
+      <div class="col-span-12 lg:col-span-9 lg:pl-10 lg:border-l border-rule" data-reveal data-d="1">
+        <p class="serif text-[22px] lg:text-[26px] leading-[1.55] text-ink">
+          <span class="display float-left text-[110px] lg:text-[140px] leading-[.78] mr-4 mt-2 text-slate font-bold">D</span>
+          r. Shravan Shetty has spent over a decade at the intersection of clinical orthodontics, academic teaching, and digital workflow design. After completing his MDS at <em class="serif italic text-slate">SDM College of Dental Sciences, Dharwad</em> in 2016, he joined Manipal College of Dental Sciences, Mangalore — where he today serves as Assistant Professor in the Department of Orthodontics &amp; Dentofacial Orthopaedics, mentoring both undergraduate and postgraduate students.
         </p>
-        <p class="text-body-sm text-secondary">
-          Member of the Infection Control Committee. Actively involved in research projects alongside teaching responsibilities.
+        <p class="serif text-[18px] lg:text-[19px] leading-[1.7] text-quiet mt-6 max-w-3xl">
+          His clinical interest sits at the leading edge of orthodontic care: <em>clear aligner therapy</em>, <em>lingual orthodontics</em>, and <em>biomechanics of treatment</em>. His research focuses on <em>micro-implant stability</em> and the evolving evidence base for aligner-driven tooth movement. Beyond the clinic he is a regular speaker at masterclasses, contributes to institutional infection control governance, and has published in journals spanning <span class="text-slate">Biomed &amp; Pharmacology Journal</span>, <span class="text-slate">International Journal of Orthodontics</span> and the <span class="text-slate">Journal of Aligner Orthodontics</span>.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-2.5">
+          <span class="pill"><span class="dot"></span>Orthodontic Biomechanics</span>
+          <span class="pill"><span class="dot"></span>Lingual Orthodontics</span>
+          <span class="pill"><span class="dot"></span>Clear Aligner Therapy</span>
+          <span class="pill"><span class="dot"></span>Micro-Implants</span>
+          <span class="pill"><span class="dot"></span>Digital Workflow</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== STATS STRIP =================== -->
+<section class="bg-ivory border-y border-rule">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 lg:py-20">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8">
+      <div data-reveal>
+        <div class="display text-slate text-[64px] lg:text-[88px] font-bold leading-none num">
+          <span data-count="10" data-suffix="+">0</span>
+        </div>
+        <div class="mt-3 smcaps text-[11px] text-quiet">Years in Practice</div>
+        <div class="mt-3 w-12 h-px bg-gold"></div>
+      </div>
+      <div data-reveal data-d="1">
+        <div class="display text-slate text-[64px] lg:text-[88px] font-bold leading-none num">
+          <span data-count="6">0</span>
+        </div>
+        <div class="mt-3 smcaps text-[11px] text-quiet">Peer-Reviewed Papers</div>
+        <div class="mt-3 w-12 h-px bg-gold"></div>
+      </div>
+      <div data-reveal data-d="2">
+        <div class="display text-slate text-[64px] lg:text-[88px] font-bold leading-none num">
+          <span data-count="3">0</span>
+        </div>
+        <div class="mt-3 smcaps text-[11px] text-quiet">Professional Affiliations</div>
+        <div class="mt-3 w-12 h-px bg-gold"></div>
+      </div>
+      <div data-reveal data-d="3">
+        <div class="display text-slate text-[64px] lg:text-[88px] font-bold leading-none">
+          <span class="italic">MCODS</span>
+        </div>
+        <div class="mt-3 smcaps text-[11px] text-quiet">Mangalore · 2017&mdash;Present</div>
+        <div class="mt-3 w-12 h-px bg-gold"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ACADEMIC =================== -->
+<section id="academic" class="py-24 lg:py-36 relative">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10">
+    <!-- Heading -->
+    <div class="grid grid-cols-12 gap-6 mb-16 lg:mb-24 items-end">
+      <div class="col-span-12 lg:col-span-7" data-reveal>
+        <div class="kicker mb-5"><span class="line"></span><span class="smcaps text-[11px] text-gold">Chapter 01 · The Academic</span></div>
+        <h2 class="display text-slate text-[48px] lg:text-[80px] leading-[0.95] font-bold">
+          A decade <em class="font-medium text-gold">teaching</em><br/>the craft of orthodontics.
+        </h2>
+      </div>
+      <div class="col-span-12 lg:col-span-5 lg:pl-10" data-reveal data-d="2">
+        <p class="serif text-[17px] leading-[1.7] text-quiet">
+          Shaping the next generation of orthodontists while contributing to institutional clinical governance and active research at Manipal College of Dental Sciences.
         </p>
       </div>
+    </div>
 
-      <!-- Teaching -->
-      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary">school</span>
+    <!-- Three editorial cards with big numerals -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+      <!-- Card 01 -->
+      <article class="relative bg-ivory border border-rule p-8 lg:p-10 card-lift" data-reveal>
+        <div class="bignum absolute top-4 right-5 text-[150px]">01</div>
+        <div class="smcaps text-[11px] text-gold mb-6">Current Role</div>
+        <h3 class="display text-slate text-[28px] leading-tight font-semibold mb-5">
+          Assistant Professor
+        </h3>
+        <p class="serif text-[16px] leading-relaxed text-quiet mb-5">
+          Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore — actively engaged in clinical teaching, research supervision, and the departmental infection control committee.
+        </p>
+        <div class="rule mb-5"></div>
+        <div class="flex items-center justify-between">
+          <span class="smcaps text-[10px] text-quiet">Since</span>
+          <span class="display italic text-slate num">2017</span>
         </div>
-        <h3 class="font-serif text-headline-md text-primary mb-3">Currently Teaching</h3>
-        <p class="text-body-md text-on-surface-variant mb-4">
-          Orthodontics and Dentofacial Orthopaedics
+      </article>
+
+      <!-- Card 02 -->
+      <article class="relative bg-slate text-paper p-8 lg:p-10 card-lift" data-reveal data-d="1">
+        <div class="bignum absolute top-4 right-5 text-[150px]" style="-webkit-text-stroke-color: rgba(233,195,73,.25);">02</div>
+        <div class="smcaps text-[11px] text-goldlt mb-6">Currently Teaching</div>
+        <h3 class="display text-paper text-[28px] leading-tight font-semibold mb-3">
+          Orthodontics &amp;<br/><em class="font-medium text-goldlt">Dentofacial Orthopaedics</em>
+        </h3>
+        <p class="serif text-[15px] leading-relaxed text-paper/70 mb-6">
+          Both clinical and theoretical instruction across undergraduate cohorts, plus postgraduate mentorship in research and casework.
         </p>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">3rd Year BDS</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">4th Year BDS</span>
+          <span class="chip-dark"><span class="w-1.5 h-1.5 rounded-full bg-goldlt"></span>3<sup>rd</sup> Year BDS</span>
+          <span class="chip-dark"><span class="w-1.5 h-1.5 rounded-full bg-goldlt"></span>4<sup>th</sup> Year BDS</span>
+          <span class="chip-dark"><span class="w-1.5 h-1.5 rounded-full bg-goldlt"></span>PG Mentoring</span>
         </div>
-        <p class="text-body-sm text-secondary mt-4">
-          Mentors undergraduate and postgraduate students across clinical and theoretical curricula.
-        </p>
-      </div>
+      </article>
 
-      <!-- Qualifications -->
-      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
-          <span class="material-symbols-outlined text-primary">workspace_premium</span>
-        </div>
-        <h3 class="font-serif text-headline-md text-primary mb-3">Qualifications</h3>
-        <div class="space-y-4">
-          <div>
-            <p class="font-semibold text-on-surface">MDS — Orthodontics &amp; Dentofacial Orthopaedics</p>
-            <p class="text-body-sm text-secondary">SDM College of Dental Sciences, Dharwad · 2016</p>
-          </div>
-          <div class="pt-3 border-t border-outline-variant/40">
-            <p class="font-semibold text-on-surface">BDS</p>
-            <p class="text-body-sm text-secondary">Yenepoya Dental College, RGUHS · 2012</p>
+      <!-- Card 03 -->
+      <article class="relative bg-ivory border border-rule p-8 lg:p-10 card-lift" data-reveal data-d="2">
+        <div class="bignum absolute top-4 right-5 text-[150px]">03</div>
+        <div class="smcaps text-[11px] text-gold mb-6">Qualifications</div>
+
+        <div class="mb-6">
+          <h3 class="display text-slate text-[24px] leading-tight font-semibold">MDS</h3>
+          <div class="serif text-[14px] text-quiet italic mt-1">Orthodontics &amp; Dentofacial Orthopaedics</div>
+          <div class="flex items-center gap-3 mt-2">
+            <span class="display italic text-slate num text-lg">2016</span>
+            <span class="rule flex-1"></span>
+            <span class="smcaps text-[10px] text-quiet">SDM Dharwad</span>
           </div>
         </div>
-      </div>
+        <div class="rule mb-6"></div>
+        <div>
+          <h3 class="display text-slate text-[24px] leading-tight font-semibold">BDS</h3>
+          <div class="serif text-[14px] text-quiet italic mt-1">Bachelor of Dental Surgery</div>
+          <div class="flex items-center gap-3 mt-2">
+            <span class="display italic text-slate num text-lg">2012</span>
+            <span class="rule flex-1"></span>
+            <span class="smcaps text-[10px] text-quiet">Yenepoya · RGUHS</span>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <!-- Experience timeline -->
-    <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
-      <h3 class="font-serif text-headline-md text-primary mb-8 flex items-center gap-3">
-        <span class="material-symbols-outlined text-tertiary-fixed-dim" style="color:#a8861f;">timeline</span>
-        Professional Experience
-      </h3>
-      <div class="relative pl-8 md:pl-12 border-l-2 border-secondary-fixed-dim">
-        <div class="relative">
-          <div class="absolute -left-[42px] md:-left-[50px] top-1 w-5 h-5 rounded-full bg-primary border-4 border-background"></div>
-          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
-            <h4 class="font-serif text-headline-md text-primary">Assistant Professor</h4>
-            <span class="text-label-caps text-on-surface-variant">2017 — Present</span>
-          </div>
-          <p class="text-body-md text-secondary">
-            Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore
+    <!-- Experience strip / timeline -->
+    <div class="mt-20 lg:mt-28" data-reveal>
+      <div class="kicker mb-6"><span class="line"></span><span class="smcaps text-[11px] text-gold">Experience</span></div>
+      <div class="grid grid-cols-12 gap-6 items-center bg-ivory border border-rule p-8 lg:p-10">
+        <div class="col-span-12 lg:col-span-2">
+          <div class="display text-slate text-[44px] font-bold num leading-none">2017</div>
+          <div class="smcaps text-[10px] text-gold mt-2">— Present</div>
+        </div>
+        <div class="hidden lg:block col-span-1 vrule h-16 mx-auto"></div>
+        <div class="col-span-12 lg:col-span-9">
+          <h3 class="display text-slate text-[26px] font-semibold">Assistant Professor</h3>
+          <p class="serif text-quiet text-[16px] mt-2">
+            Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore. Faculty teaching, research supervision, and clinical practice.
           </p>
         </div>
       </div>
@@ -318,188 +615,275 @@
   </div>
 </section>
 
-<!-- ============ RESEARCH ============ -->
-<section id="research" class="section-anchor py-section-gap-lg bg-surface-container-low">
-  <div class="max-w-container-max mx-auto px-gutter">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">02 · Research</span>
-      <h2 class="font-serif text-headline-lg text-primary mb-4">Featured Research</h2>
-      <p class="text-body-md text-on-surface-variant">
-        Investigating the intersection of digital tools, orthodontic biomechanics, and clinical workflow.
+<!-- =================== RESEARCH (magazine spread) =================== -->
+<section id="research" class="py-24 lg:py-36 bg-ivory border-y border-rule">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10">
+    <!-- Heading -->
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 lg:mb-24">
+      <div data-reveal>
+        <div class="kicker mb-5"><span class="line"></span><span class="smcaps text-[11px] text-gold">Chapter 02 · The Researcher</span></div>
+        <h2 class="display text-slate text-[48px] lg:text-[80px] leading-[0.95] font-bold">
+          Featured <em class="font-medium text-gold">work.</em>
+        </h2>
+      </div>
+      <p class="serif italic text-quiet text-[17px] max-w-md" data-reveal data-d="1">
+        Two papers that capture the through-line of his research — digital tools meeting clinical orthodontics.
       </p>
     </div>
 
-    <!-- Featured paper 1 -->
-    <article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-outline-variant mb-8 grid grid-cols-1 lg:grid-cols-5 gap-0">
-      <div class="lg:col-span-2 relative min-h-[280px] lg:min-h-[400px]">
-        <img alt="Dr. Shravan Shetty presenting at Orthobyte 2020" src="images/orthobyte-2020.jpg" class="absolute inset-0 w-full h-full object-cover"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
-        <span class="absolute top-5 left-5 px-3 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-label-caps">June 2019</span>
+    <!-- Article 1 -->
+    <article class="grid grid-cols-12 gap-6 lg:gap-12 mb-24 lg:mb-32 items-start">
+      <div class="col-span-12 lg:col-span-5" data-reveal>
+        <div class="plate photo-tone cap-wrap">
+          <div class="overflow-hidden" style="aspect-ratio: 4 / 3;">
+            <img src="images/orthobyte-2020.jpg" alt="Dr. Shravan Shetty presenting digital orthodontics at Orthobyte 2020"/>
+          </div>
+          <div class="pt-3 flex items-center justify-between text-quiet">
+            <span class="smcaps text-[10px]">Plate II · Orthobyte 2020</span>
+            <span class="serif italic text-sm">Conference</span>
+          </div>
+        </div>
       </div>
-      <div class="lg:col-span-3 p-8 md:p-12">
-        <p class="text-label-caps uppercase tracking-widest text-secondary mb-3">Biomed &amp; Pharmacology Journal · 12(1), 341–346</p>
-        <h3 class="font-serif text-headline-md md:text-headline-lg text-primary mb-4 leading-tight">
-          A Comparative Evaluation of Reliability of an Android-based App and Computerized Cephalometric Tracing Program for Orthodontic Cephalometric Analysis
+      <div class="col-span-12 lg:col-span-7" data-reveal data-d="1">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="display italic text-gold text-[44px] leading-none font-medium">01</span>
+          <div class="flex-1 h-px bg-rule"></div>
+          <span class="smcaps text-[11px] text-quiet">June 2019</span>
+        </div>
+        <div class="smcaps text-[11px] text-quiet mb-4">Biomed &amp; Pharmacology Journal · 12(1): 341—346</div>
+        <h3 class="display text-slate text-[32px] lg:text-[44px] leading-[1.05] font-bold mb-6">
+          A Comparative Evaluation of <em class="text-gold">Reliability</em> of an Android-based App &amp; Computerised Cephalometric Tracing Program.
         </h3>
-        <p class="text-body-sm text-secondary mb-5">
-          Shettigar P, <strong class="text-primary">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK
+        <p class="serif text-[15px] text-quiet mb-5">
+          Shettigar P, <strong class="text-slate">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK
         </p>
-        <p class="text-body-md text-on-surface-variant mb-6">
-          This study assessed the reliability of the Android smartphone-based OneCeph app against Dolphin Imaging — the established gold-standard computerised cephalometric tracing program. Across 50 cephalometric radiographs, 20 landmarks and 15 skeletal, dental, and soft-tissue parameters were measured and compared by paired <em>t</em>-test. Only 4 of 15 parameters showed statistically significant differences (<em>p</em> &lt; 0.05); the remaining 11 demonstrated strong positive correlation. The OneCeph app proved reliable, user-friendly, and clinically usable for day-to-day cephalometric analysis.
+
+        <p class="serif italic text-[20px] leading-[1.55] text-slate border-l-2 border-gold pl-5 my-7">
+          "Only four of fifteen parameters showed statistically significant differences — the OneCeph app proves reliable and user-friendly for clinicians' day-to-day cephalometric analysis."
         </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Cephalometry</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Digital Radiography</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Smartphone Apps</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Computers</span>
+
+        <p class="serif text-[16px] leading-[1.7] text-ink">
+          The study assessed an Android smartphone-based app (OneCeph) against the gold-standard Dolphin Imaging system, across 50 cephalometric radiographs with 20 landmarks and 15 skeletal, dental and soft-tissue parameters. Eleven of fifteen parameters showed strong positive correlation — establishing the smartphone app as a clinically viable tool for routine cephalometric work.
+        </p>
+
+        <div class="mt-7 flex flex-wrap gap-2.5">
+          <span class="pill"><span class="dot"></span>Cephalometry</span>
+          <span class="pill"><span class="dot"></span>Digital Radiography</span>
+          <span class="pill"><span class="dot"></span>Smartphone</span>
         </div>
       </div>
     </article>
 
-    <!-- Featured paper 2 -->
-    <article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-outline-variant grid grid-cols-1 lg:grid-cols-5 gap-0">
-      <div class="lg:col-span-3 p-8 md:p-12 order-2 lg:order-1">
-        <p class="text-label-caps uppercase tracking-widest text-secondary mb-3">Indian Journal of Public Health Research &amp; Development · 10(4), 278–282</p>
-        <h3 class="font-serif text-headline-md md:text-headline-lg text-primary mb-4 leading-tight">
-          Digital India, Digitizing the Orthodontic Office — Our Experience with Design and Implementation of a Contemporary Patient Management System
+    <div class="diag-rule my-2"></div>
+
+    <!-- Article 2 -->
+    <article class="grid grid-cols-12 gap-6 lg:gap-12 mt-24 lg:mt-32 items-start">
+      <div class="col-span-12 lg:col-span-7 order-2 lg:order-1" data-reveal>
+        <div class="flex items-center gap-4 mb-6">
+          <span class="display italic text-gold text-[44px] leading-none font-medium">02</span>
+          <div class="flex-1 h-px bg-rule"></div>
+          <span class="smcaps text-[11px] text-quiet">June 2019</span>
+        </div>
+        <div class="smcaps text-[11px] text-quiet mb-4">Indian Journal of Public Health Research &amp; Development · 10(4): 278—282</div>
+        <h3 class="display text-slate text-[32px] lg:text-[44px] leading-[1.05] font-bold mb-6">
+          <em class="text-gold">Digital India</em>, Digitizing the Orthodontic Office — A Contemporary Patient Management System.
         </h3>
-        <p class="text-body-sm text-secondary mb-5">
-          Jose NP, <strong class="text-primary">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L
+        <p class="serif text-[15px] text-quiet mb-5">
+          Jose NP, <strong class="text-slate">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L
         </p>
-        <p class="text-body-md text-on-surface-variant mb-6">
-          A practice report on the design and rollout of a contemporary, paperless patient management system within an academic orthodontic department — covering scheduling, clinical records, imaging integration, and reporting. The paper outlines design choices, departmental workflow shifts, and lessons learned from migrating an established clinic onto a fully digital stack.
+        <p class="serif italic text-[20px] leading-[1.55] text-slate border-l-2 border-gold pl-5 my-7">
+          "A paperless transition for an academic orthodontic department — scheduling, clinical records, imaging, and reporting unified into a single contemporary stack."
         </p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Digital Workflow</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Clinic Software</span>
-          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Practice Design</span>
+        <p class="serif text-[16px] leading-[1.7] text-ink">
+          A practice report on the design and rollout of a contemporary patient management system inside an academic orthodontic department — covering scheduling, clinical records, imaging integration, and reporting. The paper outlines design choices, departmental workflow shifts, and lessons learned from migrating an established clinic onto a fully digital stack.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-2.5">
+          <span class="pill"><span class="dot"></span>Digital Workflow</span>
+          <span class="pill"><span class="dot"></span>Practice Design</span>
+          <span class="pill"><span class="dot"></span>Clinical Software</span>
         </div>
       </div>
-      <div class="lg:col-span-2 relative min-h-[280px] lg:min-h-[400px] order-1 lg:order-2">
-        <img alt="Aligner masterclass teaching session" src="images/aligner-masterclass.jpg" class="absolute inset-0 w-full h-full object-cover"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
-        <span class="absolute top-5 left-5 px-3 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-label-caps">June 2019</span>
+      <div class="col-span-12 lg:col-span-5 order-1 lg:order-2" data-reveal data-d="1">
+        <div class="plate photo-tone cap-wrap">
+          <div class="overflow-hidden" style="aspect-ratio: 4 / 3;">
+            <img src="images/aligner-masterclass.jpg" alt="Aligner masterclass — Dr. Shravan Shetty teaching"/>
+          </div>
+          <div class="pt-3 flex items-center justify-between text-quiet">
+            <span class="smcaps text-[10px]">Plate III · Masterclass</span>
+            <span class="serif italic text-sm">Amrita Inst.</span>
+          </div>
+        </div>
       </div>
     </article>
-
-    <div class="text-center mt-12">
-      <a href="#publications" class="inline-flex items-center gap-2 text-label-caps text-primary hover:text-primary-container transition-colors">
-        View full publication list
-        <span class="material-symbols-outlined text-base">arrow_downward</span>
-      </a>
-    </div>
   </div>
 </section>
 
-<!-- ============ EXPERTISE ============ -->
-<section id="expertise" class="section-anchor py-section-gap-lg">
-  <div class="max-w-container-max mx-auto px-gutter">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">03 · Expertise</span>
-      <h2 class="font-serif text-headline-lg text-primary mb-4">Areas of Practice &amp; Interest</h2>
-      <p class="text-body-md text-on-surface-variant">
-        From orthodontic biomechanics to clear aligner therapy and micro-implant research.
-      </p>
+<!-- =================== EXPERTISE =================== -->
+<section id="expertise" class="py-24 lg:py-36">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10">
+    <!-- Heading -->
+    <div class="grid grid-cols-12 gap-6 mb-16 lg:mb-24 items-end">
+      <div class="col-span-12 lg:col-span-7" data-reveal>
+        <div class="kicker mb-5"><span class="line"></span><span class="smcaps text-[11px] text-gold">Chapter 03 · The Clinician</span></div>
+        <h2 class="display text-slate text-[48px] lg:text-[80px] leading-[0.95] font-bold">
+          Where <em class="font-medium text-gold">interest</em><br/>meets expertise.
+        </h2>
+      </div>
+      <div class="col-span-12 lg:col-span-5 lg:pl-10" data-reveal data-d="2">
+        <p class="serif text-[17px] leading-[1.7] text-quiet">
+          From the mechanics of force-system design to the unfolding evidence around clear aligner therapy and micro-implant stability.
+        </p>
+      </div>
     </div>
 
-    <!-- Bento grid: 3 areas -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-      <!-- Areas of Interest (big card) -->
-      <div class="md:col-span-2 md:row-span-1 bg-primary text-on-primary p-10 md:p-12 rounded-3xl relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
-        </div>
-        <div class="relative z-10">
-          <span class="material-symbols-outlined text-tertiary-fixed-dim mb-4 text-3xl">favorite</span>
-          <h3 class="font-serif text-headline-md mb-6">Areas of Interest</h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
-              <span class="material-symbols-outlined text-base">tune</span>
-              Orthodontic Biomechanics
-            </span>
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
-              <span class="material-symbols-outlined text-base">dentistry</span>
-              Lingual Orthodontics
-            </span>
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
-              <span class="material-symbols-outlined text-base">align_horizontal_center</span>
-              Clear Aligner Treatment
-            </span>
+    <!-- Bento -->
+    <div class="grid grid-cols-12 gap-6">
+      <!-- Big dark card: Areas of Interest -->
+      <div class="col-span-12 lg:col-span-8 relative bg-slate text-paper p-10 lg:p-14 overflow-hidden card-lift" data-reveal>
+        <div class="absolute -bottom-32 -right-24 w-[420px] h-[420px] rounded-full bg-goldlt/10 blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-px h-full bg-goldlt/20"></div>
+        <div class="relative">
+          <div class="flex items-baseline gap-4 mb-8">
+            <span class="bignum text-[64px] leading-none" style="-webkit-text-stroke-color: rgba(233,195,73,.35);">01</span>
+            <span class="smcaps text-[11px] text-goldlt">Areas of Interest</span>
+          </div>
+          <h3 class="display text-[40px] lg:text-[64px] font-bold leading-[1] mb-8">
+            <em class="font-medium text-goldlt">Aligners,</em> biomechanics &amp; the lingual approach.
+          </h3>
+          <p class="serif text-paper/75 text-[17px] max-w-xl mb-10">
+            A clinical practice anchored in the appliances and force-systems that quietly shape modern orthodontic outcomes.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="border-t border-paper/15 pt-5">
+              <div class="display text-goldlt text-3xl font-bold mb-2 num">01</div>
+              <div class="serif text-[17px] text-paper">Orthodontic Biomechanics</div>
+            </div>
+            <div class="border-t border-paper/15 pt-5">
+              <div class="display text-goldlt text-3xl font-bold mb-2 num">02</div>
+              <div class="serif text-[17px] text-paper">Lingual Orthodontics</div>
+            </div>
+            <div class="border-t border-paper/15 pt-5">
+              <div class="display text-goldlt text-3xl font-bold mb-2 num">03</div>
+              <div class="serif text-[17px] text-paper">Clear Aligner Therapy</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Expertise -->
-      <div class="bg-secondary-fixed p-8 rounded-3xl">
-        <span class="material-symbols-outlined text-primary mb-4 text-3xl">verified</span>
-        <h3 class="font-serif text-headline-md text-primary mb-3">Expertise</h3>
-        <p class="text-body-md text-on-secondary-fixed-variant">
-          Orthodontic treatment mechanics — full-arch planning, force-system design, and case finishing across fixed and removable appliances.
+      <!-- Expertise card -->
+      <div class="col-span-12 lg:col-span-4 bg-mint text-slate p-10 card-lift relative overflow-hidden" data-reveal data-d="1">
+        <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-slate/15"></div>
+        <div class="absolute -top-6 -right-6 w-28 h-28 rounded-full border border-slate/15"></div>
+        <div class="flex items-baseline gap-4 mb-8">
+          <span class="bignum text-[64px] leading-none" style="-webkit-text-stroke-color: rgba(22,40,57,.25);">02</span>
+          <span class="smcaps text-[11px] text-gold">Expertise</span>
+        </div>
+        <h3 class="display text-[28px] font-semibold leading-tight mb-4">
+          <em class="font-medium">Treatment mechanics</em> across appliances.
+        </h3>
+        <p class="serif text-[15px] text-slate/80 leading-relaxed">
+          Full-arch planning, force-system design, and case finishing across fixed, lingual and removable appliances.
         </p>
       </div>
 
-      <!-- Research -->
-      <div class="md:col-span-2 bg-tertiary-fixed/40 p-8 md:p-10 rounded-3xl">
-        <span class="material-symbols-outlined mb-4 text-3xl" style="color:#735c00;">biotech</span>
-        <h3 class="font-serif text-headline-md text-primary mb-3">Active Research Focus</h3>
-        <p class="text-body-md text-on-tertiary-fixed-variant mb-4">
-          Investigating orthodontic micro-implant stability and clinical performance, alongside the evolving evidence base for clear aligner therapy.
+      <!-- Research focus card -->
+      <div class="col-span-12 lg:col-span-5 bg-ivory border border-rule p-10 card-lift" data-reveal data-d="1">
+        <div class="flex items-baseline gap-4 mb-6">
+          <span class="bignum text-[64px] leading-none">03</span>
+          <span class="smcaps text-[11px] text-gold">Active Research</span>
+        </div>
+        <h3 class="display text-slate text-[28px] font-semibold leading-tight mb-4">
+          Micro-implants &amp; aligner evidence.
+        </h3>
+        <p class="serif text-[15px] text-quiet leading-relaxed mb-6">
+          Resonance frequency analysis for measuring implant stability in vivo, alongside ongoing reading and research into clear aligner outcomes.
         </p>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-surface-container-lowest text-on-tertiary-fixed-variant rounded-full text-body-sm border border-tertiary-fixed-dim/40">Micro-implants</span>
-          <span class="px-3 py-1 bg-surface-container-lowest text-on-tertiary-fixed-variant rounded-full text-body-sm border border-tertiary-fixed-dim/40">Aligner Therapy</span>
+          <span class="pill"><span class="dot"></span>Micro-Implants</span>
+          <span class="pill"><span class="dot"></span>Aligner Therapy</span>
+          <span class="pill"><span class="dot"></span>RFA</span>
         </div>
       </div>
 
       <!-- Affiliations card -->
-      <div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant">
-        <span class="material-symbols-outlined text-primary mb-4 text-3xl">groups</span>
-        <h3 class="font-serif text-headline-md text-primary mb-4">Affiliations</h3>
-        <ul class="space-y-3 text-body-sm text-on-surface-variant">
-          <li class="flex items-start gap-2">
-            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
-            <span><strong class="text-primary">Life Member</strong>, Indian Orthodontic Society (IOS)</span>
+      <div class="col-span-12 lg:col-span-7 bg-ivory border border-rule p-10 card-lift" data-reveal data-d="2">
+        <div class="flex items-baseline gap-4 mb-6">
+          <span class="bignum text-[64px] leading-none">04</span>
+          <span class="smcaps text-[11px] text-gold">Affiliations &amp; Memberships</span>
+        </div>
+        <ul class="divide-y divide-rule">
+          <li class="flex items-baseline justify-between py-4">
+            <div>
+              <div class="display text-slate text-[20px] font-semibold">Indian Orthodontic Society</div>
+              <div class="serif italic text-quiet text-sm mt-1">National professional body for orthodontists</div>
+            </div>
+            <span class="smcaps text-[10px] text-gold whitespace-nowrap">Life Member</span>
           </li>
-          <li class="flex items-start gap-2">
-            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
-            <span><strong class="text-primary">Life Member</strong>, Indian Dental Association (IDA)</span>
+          <li class="flex items-baseline justify-between py-4">
+            <div>
+              <div class="display text-slate text-[20px] font-semibold">Indian Dental Association</div>
+              <div class="serif italic text-quiet text-sm mt-1">Premier body of dental professionals in India</div>
+            </div>
+            <span class="smcaps text-[10px] text-gold whitespace-nowrap">Life Member</span>
           </li>
-          <li class="flex items-start gap-2">
-            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
-            <span><strong class="text-primary">Organizing Committee</strong>, 5th National ISPRP Conference, Mangalore (2012)</span>
+          <li class="flex items-baseline justify-between py-4">
+            <div>
+              <div class="display text-slate text-[20px] font-semibold">5<sup>th</sup> National ISPRP Conference</div>
+              <div class="serif italic text-quiet text-sm mt-1">Mangalore, Karnataka · 2012</div>
+            </div>
+            <span class="smcaps text-[10px] text-gold whitespace-nowrap">Org. Committee</span>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Teaching & Speaking gallery -->
-    <div class="mt-20">
-      <div class="flex items-end justify-between mb-8 flex-wrap gap-4">
-        <div>
-          <span class="text-label-caps uppercase tracking-widest mb-2 block" style="color:#a8861f;">Engagement</span>
-          <h3 class="font-serif text-headline-md text-primary">Teaching &amp; Speaking</h3>
+    <!-- Teaching gallery -->
+    <div class="mt-24 lg:mt-32">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-14">
+        <div data-reveal>
+          <div class="kicker mb-4"><span class="line"></span><span class="smcaps text-[11px] text-gold">Lectern &amp; Lab</span></div>
+          <h3 class="display text-slate text-[36px] lg:text-[52px] leading-tight font-bold">
+            Teaching &amp; <em class="font-medium text-gold">speaking.</em>
+          </h3>
         </div>
-        <p class="text-body-sm text-secondary max-w-md">
-          Regular contributor at clinical workshops, masterclasses, and academic conferences on digital orthodontics and aligner planning.
+        <p class="serif italic text-quiet text-[16px] max-w-md" data-reveal data-d="1">
+          Hands-on clinical workshops &amp; conference talks on digital orthodontics and aligner planning.
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="relative rounded-3xl overflow-hidden shadow-sm aspect-[4/3] group">
-          <img alt="In-house aligner masterclass" src="images/aligner-masterclass.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-on-primary">
-            <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim">Masterclass</span>
-            <h4 class="font-serif text-headline-md mt-2">In-House Aligner Masterclass</h4>
-            <p class="text-body-sm opacity-80 mt-1">Hands-on training in digital aligner planning</p>
+
+      <div class="grid grid-cols-12 gap-6">
+        <!-- Big card -->
+        <div class="col-span-12 lg:col-span-8" data-reveal>
+          <div class="plate photo-tone cap-wrap">
+            <div class="overflow-hidden" style="aspect-ratio: 16 / 10;">
+              <img src="images/aligner-masterclass.jpg" alt="In-house aligner masterclass"/>
+            </div>
+            <div class="cap">
+              <div class="smcaps text-[10px] text-goldlt mb-1">Masterclass</div>
+              <div class="display text-[22px] leading-tight">In-House Aligner Masterclass</div>
+              <div class="serif italic text-sm text-paper/70 mt-1">Hands-on training in digital aligner planning</div>
+            </div>
+            <div class="pt-3 flex items-center justify-between text-quiet">
+              <span class="smcaps text-[10px]">Plate IV · Lecture Hall</span>
+              <span class="serif italic text-sm">Amrita</span>
+            </div>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden shadow-sm aspect-[4/3] group">
-          <img alt="Clinical workshop" src="images/workshop.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-on-primary">
-            <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim">Workshop</span>
-            <h4 class="font-serif text-headline-md mt-2">Clinical Aligner Workshop</h4>
-            <p class="text-body-sm opacity-80 mt-1">Software-driven case planning with practitioners</p>
+
+        <!-- Small card -->
+        <div class="col-span-12 lg:col-span-4" data-reveal data-d="1">
+          <div class="plate photo-tone cap-wrap h-full">
+            <div class="overflow-hidden" style="aspect-ratio: 4 / 5;">
+              <img src="images/workshop.jpg" alt="Clinical workshop"/>
+            </div>
+            <div class="cap">
+              <div class="smcaps text-[10px] text-goldlt mb-1">Workshop</div>
+              <div class="display text-[20px] leading-tight">Clinical Aligner Workshop</div>
+            </div>
+            <div class="pt-3 flex items-center justify-between text-quiet">
+              <span class="smcaps text-[10px]">Plate V · Workshop</span>
+              <span class="serif italic text-sm">Field</span>
+            </div>
           </div>
         </div>
       </div>
@@ -507,185 +891,185 @@
   </div>
 </section>
 
-<!-- ============ PUBLICATIONS ============ -->
-<section id="publications" class="section-anchor py-section-gap-lg bg-surface-container-low">
-  <div class="max-w-container-max mx-auto px-gutter">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">04 · Publications</span>
-      <h2 class="font-serif text-headline-lg text-primary mb-4">Selected Publications</h2>
-      <p class="text-body-md text-on-surface-variant">
-        Peer-reviewed work in cephalometric analysis, digital workflow, micro-implant stability, and clinical orthodontic appliances.
-      </p>
+<!-- =================== PUBLICATIONS (index/TOC) =================== -->
+<section id="publications" class="py-24 lg:py-36 bg-ivory border-y border-rule">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10">
+
+    <div class="grid grid-cols-12 gap-6 mb-16 lg:mb-20 items-end">
+      <div class="col-span-12 lg:col-span-7" data-reveal>
+        <div class="kicker mb-5"><span class="line"></span><span class="smcaps text-[11px] text-gold">Chapter 04 · The Record</span></div>
+        <h2 class="display text-slate text-[48px] lg:text-[80px] leading-[0.95] font-bold">
+          Selected <em class="font-medium text-gold">publications.</em>
+        </h2>
+      </div>
+      <div class="col-span-12 lg:col-span-5 lg:pl-10" data-reveal data-d="1">
+        <p class="serif text-[16px] leading-[1.7] text-quiet">
+          Peer-reviewed work in cephalometric analysis, digital workflow, micro-implant stability and clinical orthodontic appliances.
+        </p>
+      </div>
     </div>
 
-    <div class="max-w-4xl mx-auto space-y-4">
+    <!-- Column headings -->
+    <div class="hidden lg:grid grid-cols-12 gap-6 pb-4 border-b border-slate/30">
+      <div class="col-span-1 smcaps text-[10px] text-quiet">Year</div>
+      <div class="col-span-7 smcaps text-[10px] text-quiet">Title</div>
+      <div class="col-span-3 smcaps text-[10px] text-quiet">Journal</div>
+      <div class="col-span-1 smcaps text-[10px] text-quiet text-right">No.</div>
+    </div>
 
-      <!-- Pub 1 (2019) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2019</span>
-            </div>
-          </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+    <ul>
+      <!-- Row 1 -->
+      <li data-reveal>
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2019</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
               Digital India, Digitizing the Orthodontic Office — Our Experience with Design and Implementation of a Contemporary Patient Management System
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              Jose NP, <strong class="text-primary">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              Indian Journal of Public Health Research &amp; Development · 10(4): 278–282
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2">Jose NP, <strong class="not-italic text-slate">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L</p>
           </div>
-        </div>
-      </article>
-
-      <!-- Pub 2 (2019) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2019</span>
-            </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">Indian J Pub Health Res &amp; Dev <span class="num">· 10(4)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">01</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
           </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
-              A Comparative Evaluation of Reliability of an Android-based App and Computerized Cephalometric Tracing Program for Orthodontic Cephalometric Analysis
+        </a>
+      </li>
+      <!-- Row 2 -->
+      <li data-reveal data-d="1">
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2019</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
+              A Comparative Evaluation of Reliability of an Android-based App and Computerised Cephalometric Tracing Program for Orthodontic Cephalometric Analysis
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              Shettigar P, <strong class="text-primary">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              Biomed &amp; Pharmacology Journal · 12(1): 341–346
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2">Shettigar P, <strong class="not-italic text-slate">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK</p>
           </div>
-        </div>
-      </article>
-
-      <!-- Pub 3 (2018) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2018</span>
-            </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">Biomed Pharmacol J <span class="num">· 12(1)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">02</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
           </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+        </a>
+      </li>
+      <!-- Row 3 -->
+      <li data-reveal data-d="2">
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2018</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
               A Simple Aligner Removal Tool
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              <strong class="text-primary">Shetty S</strong>
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              Journal of Aligner Orthodontics · 2(2): 151
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2"><strong class="not-italic text-slate">Shetty S</strong></p>
           </div>
-        </div>
-      </article>
-
-      <!-- Pub 4 (2017) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2017</span>
-            </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">J Aligner Orthodontics <span class="num">· 2(2)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">03</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
           </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+        </a>
+      </li>
+      <!-- Row 4 -->
+      <li data-reveal data-d="3">
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2017</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
               Facile Stabilizer for Lingual Retainer Wires
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              <strong class="text-primary">Shetty S</strong>, Naik RD, Patil AK
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              International Journal of Orthodontics (Milwaukee) · Spring, 28(1): 43–45
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2"><strong class="not-italic text-slate">Shetty S</strong>, Naik RD, Patil AK</p>
           </div>
-        </div>
-      </article>
-
-      <!-- Pub 5 (2016) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2016</span>
-            </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">Int J Orthod Milwaukee <span class="num">· 28(1)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">04</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
           </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+        </a>
+      </li>
+      <!-- Row 5 -->
+      <li data-reveal data-d="4">
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2016</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
               Evaluation of Orthodontic Micro-Implant Stability using Resonance Frequency Analysis: An In Vivo Study
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              <strong class="text-primary">Shetty S</strong>, Naik R, Patil A
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              Journal of Contemporary Orthodontics · 1(1): 5–12
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2"><strong class="not-italic text-slate">Shetty S</strong>, Naik R, Patil A</p>
           </div>
-        </div>
-      </article>
-
-      <!-- Pub 6 (2012) -->
-      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
-        <div class="flex gap-5 md:gap-7">
-          <div class="flex-shrink-0">
-            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
-              <span class="font-serif text-primary font-bold text-lg md:text-xl">2012</span>
-            </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">J Contemp Orthod <span class="num">· 1(1)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">05</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
           </div>
-          <div class="flex-1 min-w-0">
-            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+        </a>
+      </li>
+      <!-- Row 6 -->
+      <li data-reveal data-d="5">
+        <a class="indexrow grid grid-cols-12 gap-6 py-7 border-b border-rule items-baseline group" href="#">
+          <div class="col-span-2 lg:col-span-1 display italic text-slate text-2xl num">2012</div>
+          <div class="col-span-10 lg:col-span-7">
+            <h3 class="row-title display text-ink text-[20px] lg:text-[24px] leading-snug font-semibold transition-colors">
               Evaluation of Efficacy of Microwave Oven Irradiation in Disinfection of Patient-Derived Dental Cast
             </h3>
-            <p class="text-body-sm text-secondary mb-2">
-              Bhat V, Shenoy K, <strong class="text-primary">Shetty S</strong>
-            </p>
-            <p class="text-body-sm text-on-surface-variant italic">
-              International Journal of Infection Control · 8(3): 1–4
-            </p>
+            <p class="serif italic text-quiet text-sm mt-2">Bhat V, Shenoy K, <strong class="not-italic text-slate">Shetty S</strong></p>
           </div>
-        </div>
-      </article>
-
-    </div>
+          <div class="hidden lg:block col-span-3 serif text-[14px] text-quiet">Int J Infect Control <span class="num">· 8(3)</span></div>
+          <div class="hidden lg:flex col-span-1 justify-end items-center">
+            <span class="smcaps text-[10px] text-quiet mr-3">№ <span class="num">06</span></span>
+            <span class="arrow display text-gold text-2xl">→</span>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
 
-<!-- ============ CONTACT / CTA ============ -->
-<section id="contact" class="section-anchor py-section-gap-lg">
-  <div class="max-w-container-max mx-auto px-gutter">
-    <div class="bg-primary rounded-3xl p-10 md:p-20 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
-      </div>
-      <div class="absolute -top-32 -right-32 w-96 h-96 bg-tertiary-fixed/20 rounded-full blur-3xl"></div>
+<!-- =================== CONTACT / CTA =================== -->
+<section id="contact" class="relative py-24 lg:py-36 bg-slate text-paper overflow-hidden">
+  <!-- decorative -->
+  <div class="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-goldlt/12 blur-3xl drift-slow"></div>
+  <div class="absolute -bottom-40 -left-40 w-[480px] h-[480px] rounded-full bg-mint/10 blur-3xl drift"></div>
+  <!-- subtle grid -->
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(#f4f1ea 1px, transparent 1px), linear-gradient(90deg, #f4f1ea 1px, transparent 1px); background-size: 64px 64px;"></div>
 
-      <div class="relative z-10 text-center max-w-2xl mx-auto">
-        <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim mb-4 block">05 · Get in Touch</span>
-        <h2 class="font-serif text-headline-lg md:text-headline-xl-mobile text-on-primary mb-6">
-          Let's Connect
+  <div class="relative max-w-[1320px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-12 gap-6 lg:gap-12">
+      <div class="col-span-12 lg:col-span-7" data-reveal>
+        <div class="kicker mb-6"><span class="line bg-goldlt"></span><span class="smcaps text-[11px] text-goldlt">Get in Touch</span></div>
+        <h2 class="display text-paper text-[56px] lg:text-[104px] leading-[0.95] font-bold">
+          Let's<br/>
+          <em class="font-medium text-goldlt">talk.</em>
         </h2>
-        <p class="text-body-lg text-on-primary-container mb-10">
-          Open to academic collaborations, speaking invitations, research partnerships, and discussions on digital orthodontic workflows.
+        <p class="serif text-paper/80 text-[18px] lg:text-[22px] leading-[1.55] mt-8 max-w-xl">
+          Open to academic collaborations, speaking invitations, research partnerships, and conversations on digital orthodontic workflows.
         </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-lg text-label-caps hover:scale-105 transition-transform shadow-lg">
-            <span class="material-symbols-outlined text-base">link</span>
-            Connect on LinkedIn
-          </a>
-          <a href="mailto:shravan.shetty@manipal.edu" class="inline-flex items-center gap-2 bg-on-primary/10 backdrop-blur border border-on-primary/20 text-on-primary px-8 py-4 rounded-lg text-label-caps hover:bg-on-primary/20 transition-all">
-            <span class="material-symbols-outlined text-base">mail</span>
-            Send an Email
-          </a>
-        </div>
-        <p class="mt-8 text-body-sm text-on-primary-container">
-          Department of Orthodontics &amp; Dentofacial Orthopaedics · MCODS Mangalore
-        </p>
+      </div>
+      <div class="col-span-12 lg:col-span-5 lg:pl-10 lg:border-l border-paper/15" data-reveal data-d="1">
+        <ul class="divide-y divide-paper/10">
+          <li class="py-6">
+            <div class="smcaps text-[10px] text-goldlt mb-2">LinkedIn</div>
+            <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="group flex items-center justify-between">
+              <span class="display text-paper text-[22px] font-medium">dr-shravan-shetty</span>
+              <span class="w-10 h-10 rounded-full border border-paper/20 grid place-items-center group-hover:bg-goldlt group-hover:border-goldlt group-hover:text-slate transition-colors">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </span>
+            </a>
+          </li>
+          <li class="py-6">
+            <div class="smcaps text-[10px] text-goldlt mb-2">Email</div>
+            <a href="mailto:shravan.shetty@manipal.edu" class="group flex items-center justify-between">
+              <span class="display text-paper text-[22px] font-medium break-all">shravan.shetty<wbr>@manipal.edu</span>
+              <span class="w-10 h-10 rounded-full border border-paper/20 grid place-items-center group-hover:bg-goldlt group-hover:border-goldlt group-hover:text-slate transition-colors shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9 6 9-6M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>
+              </span>
+            </a>
+          </li>
+          <li class="py-6">
+            <div class="smcaps text-[10px] text-goldlt mb-2">Department</div>
+            <p class="display text-paper text-[18px] leading-snug">Orthodontics &amp; Dentofacial Orthopaedics</p>
+            <p class="serif italic text-paper/60 text-sm mt-1">Manipal College of Dental Sciences · Mangalore</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -693,21 +1077,44 @@
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="bg-primary text-on-primary border-t border-on-primary/10">
-  <div class="max-w-container-max mx-auto px-gutter py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-    <div class="text-center md:text-left">
-      <div class="font-serif text-headline-md text-on-primary mb-1">Dr. Shravan Shetty</div>
-      <p class="text-body-sm text-primary-fixed-dim/80">
-        © <span id="year">2026</span> · Assistant Professor, MCODS Mangalore
-      </p>
+<!-- =================== FOOTER =================== -->
+<footer class="bg-ink text-paper relative">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 pt-20 pb-10">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="col-span-12 lg:col-span-8">
+        <div class="display text-paper text-[64px] lg:text-[120px] leading-[0.9] font-bold tracking-tight">
+          Dr.&nbsp;Shravan<br/>
+          <em class="font-medium text-goldlt">Shetty.</em>
+        </div>
+      </div>
+      <div class="col-span-12 lg:col-span-4 flex flex-col justify-end gap-8">
+        <div>
+          <div class="smcaps text-[10px] text-goldlt mb-4">Sitemap</div>
+          <ul class="grid grid-cols-2 gap-2">
+            <li><a href="#about" class="serif text-paper/80 hover:text-goldlt transition-colors">Bio</a></li>
+            <li><a href="#academic" class="serif text-paper/80 hover:text-goldlt transition-colors">Academic</a></li>
+            <li><a href="#research" class="serif text-paper/80 hover:text-goldlt transition-colors">Research</a></li>
+            <li><a href="#expertise" class="serif text-paper/80 hover:text-goldlt transition-colors">Expertise</a></li>
+            <li><a href="#publications" class="serif text-paper/80 hover:text-goldlt transition-colors">Publications</a></li>
+            <li><a href="#contact" class="serif text-paper/80 hover:text-goldlt transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <a href="#home" class="inline-flex items-center gap-3 group">
+          <span class="w-10 h-10 rounded-full border border-paper/20 grid place-items-center top-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </span>
+          <span class="smcaps text-[11px] text-paper/70 group-hover:text-goldlt">Back to top</span>
+        </a>
+      </div>
     </div>
-    <div class="flex items-center gap-6">
-      <a href="#home" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Home</a>
-      <a href="#research" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Research</a>
-      <a href="#publications" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Publications</a>
-      <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-primary-fixed-dim hover:text-tertiary-fixed-dim transition-colors">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+
+    <div class="rule bg-paper/15 mt-16 mb-6"></div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="smcaps text-[10px] text-paper/50">© <span id="yr">2026</span> · Dr. Shravan Shetty · Mangalore, India</p>
+      <p class="serif italic text-sm text-paper/50">An academic portfolio · Vol. 01</p>
+      <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-paper/60 hover:text-goldlt transition-colors">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
       </a>
     </div>
   </div>
@@ -715,27 +1122,71 @@
 
 <script>
   // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
   // Mobile menu
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu.classList.toggle('open'));
-  menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+  const mbtn = document.getElementById('mobile-menu-btn');
+  const mmenu = document.getElementById('mobile-menu');
+  mbtn?.addEventListener('click', () => mmenu.classList.toggle('open'));
+  mmenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mmenu.classList.remove('open')));
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+  // Count-up
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        const target = parseFloat(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const dur = 1400;
+        const start = performance.now();
+        const ease = (t) => 1 - Math.pow(1 - t, 3);
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / dur);
+          el.textContent = Math.round(target * ease(t)) + (t >= 1 ? suffix : '');
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        countObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
 
   // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const setActive = () => {
-    const y = window.scrollY + 120;
-    let current = 'home';
-    sections.forEach(s => { if (s.offsetTop <= y) current = s.id; });
-    navLinks.forEach(l => {
-      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
-    });
+  const sections = document.querySelectorAll('main section[id]');
+  const navlinks = document.querySelectorAll('nav .navlink');
+  const updateActive = () => {
+    const y = window.scrollY + 110;
+    let cur = '';
+    sections.forEach(s => { if (s.offsetTop <= y) cur = s.id; });
+    navlinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
   };
-  window.addEventListener('scroll', setActive, { passive: true });
-  setActive();
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+
+  // Subtle parallax on hero portrait
+  const portrait = document.querySelector('.float-slow');
+  if (portrait && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let raf;
+    window.addEventListener('scroll', () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const y = Math.min(window.scrollY, 700);
+        portrait.style.translate = `0 ${y * -0.06}px`;
+      });
+    }, { passive: true });
+  }
 </script>
 
 </body>
