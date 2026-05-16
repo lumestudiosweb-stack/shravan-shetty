@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { DOCTOR } from "@/lib/doctor";
@@ -43,26 +43,21 @@ export function Navbar() {
       )}
     >
       <nav className="container flex items-center justify-between">
-        {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
-          <div className="relative h-10 w-10 rounded-lg bg-primary/10 border border-primary/30 grid place-items-center overflow-hidden">
-            <span className="font-display text-primary text-lg font-bold leading-none">
-              S
-            </span>
-            <span className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="h-10 w-10 rounded-full bg-primary text-primary-foreground grid place-items-center font-display text-base font-bold leading-none">
+            S
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-display text-foreground text-[15px] font-semibold tracking-tight">
               {DOCTOR.fullName}
             </span>
-            <span className="font-mono text-[10px] text-muted-foreground tracking-[0.22em] uppercase">
-              MDS · Orthodontics
+            <span className="text-[11px] text-muted-foreground tracking-wide">
+              Orthodontics &middot; MCODS Mangaluru
             </span>
           </div>
         </a>
 
-        {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-8">
           {LINKS.map((l) => {
             const isActive = active === l.href.slice(1);
             return (
@@ -70,9 +65,9 @@ export function Navbar() {
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  "relative font-mono text-[11px] tracking-[0.18em] uppercase transition-colors py-1",
+                  "relative text-sm transition-colors py-1",
                   isActive
-                    ? "text-foreground"
+                    ? "text-foreground font-medium"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
@@ -91,18 +86,13 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-foreground hover:bg-primary/20 transition-colors"
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:bg-primary/90 transition-colors"
           >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            </span>
             Get in touch
-            <ArrowUpRight className="h-3 w-3" />
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden p-2 rounded-md border border-primary/20 bg-card/40 backdrop-blur-md"
+            className="lg:hidden p-2 rounded-md border border-border bg-card/60 backdrop-blur-md"
             aria-label="Toggle menu"
           >
             {open ? (
@@ -114,7 +104,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile sheet */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -129,10 +118,9 @@ export function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between rounded-lg px-4 py-3 font-mono text-[12px] tracking-[0.18em] uppercase text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
+                  className="flex items-center justify-between rounded-lg px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-primary/5 transition-colors"
                 >
                   {l.label}
-                  <ArrowUpRight className="h-3.5 w-3.5 text-primary" />
                 </a>
               ))}
             </div>

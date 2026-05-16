@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 
-/**
- * Animated SVG citation graph — nodes connected by lines, dots fade in
- * sequentially. Visual metaphor for the body of research. Decorative.
- */
 const NODES = [
   { id: 0, cx: 50, cy: 90, r: 8, paper: "2012" },
   { id: 1, cx: 130, cy: 50, r: 5, paper: "" },
@@ -18,18 +14,8 @@ const NODES = [
 ];
 
 const EDGES: [number, number][] = [
-  [0, 1],
-  [0, 2],
-  [1, 3],
-  [2, 4],
-  [3, 5],
-  [4, 5],
-  [5, 6],
-  [5, 7],
-  [6, 9],
-  [7, 8],
-  [8, 9],
-  [3, 7],
+  [0, 1], [0, 2], [1, 3], [2, 4], [3, 5], [4, 5],
+  [5, 6], [5, 7], [6, 9], [7, 8], [8, 9], [3, 7],
 ];
 
 export function CitationGraph({ className = "" }: { className?: string }) {
@@ -37,13 +23,13 @@ export function CitationGraph({ className = "" }: { className?: string }) {
     <svg viewBox="0 0 640 260" className={className} aria-hidden="true">
       <defs>
         <linearGradient id="edge-grad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="hsl(178 88% 60%)" stopOpacity="0" />
-          <stop offset="50%" stopColor="hsl(178 88% 60%)" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="hsl(178 88% 60%)" stopOpacity="0" />
+          <stop offset="0%" stopColor="hsl(184 52% 30%)" stopOpacity="0" />
+          <stop offset="50%" stopColor="hsl(184 52% 30%)" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="hsl(184 52% 30%)" stopOpacity="0" />
         </linearGradient>
         <radialGradient id="node-glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="hsl(178 88% 60%)" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="hsl(178 88% 60%)" stopOpacity="0" />
+          <stop offset="0%" stopColor="hsl(184 52% 35%)" stopOpacity="0.32" />
+          <stop offset="100%" stopColor="hsl(184 52% 35%)" stopOpacity="0" />
         </radialGradient>
       </defs>
 
@@ -75,25 +61,26 @@ export function CitationGraph({ className = "" }: { className?: string }) {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ delay: 0.1 + i * 0.12, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         >
-          <circle cx={n.cx} cy={n.cy} r={n.r * 3} fill="url(#node-glow)" />
+          <circle cx={n.cx} cy={n.cy} r={n.r * 2.6} fill="url(#node-glow)" />
           <circle
             cx={n.cx}
             cy={n.cy}
             r={n.r}
-            fill="hsl(215 70% 4%)"
-            stroke="hsl(178 88% 60%)"
+            fill="hsl(38 32% 96%)"
+            stroke="hsl(184 52% 30%)"
             strokeWidth="1.2"
           />
           {n.paper && (
             <text
               x={n.cx}
               y={n.cy + 22}
-              fill="hsl(178 88% 70%)"
+              fill="hsl(184 40% 30%)"
               fontSize="9"
-              fontFamily="JetBrains Mono, monospace"
+              fontFamily="Inter, sans-serif"
               textAnchor="middle"
-              letterSpacing="0.12em"
+              letterSpacing="0.04em"
               opacity="0.7"
+              fontWeight="500"
             >
               {n.paper}
             </text>

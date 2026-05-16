@@ -6,6 +6,11 @@ interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   showRadialGradient?: boolean;
 }
 
+/**
+ * Light-mode aurora — soft sky/mint/gold washes that drift slowly behind the
+ * hero. Intentionally restrained — meant to read as ambient museum lighting
+ * rather than a sci-fi background.
+ */
 export const AuroraBackground = ({
   className,
   children,
@@ -24,18 +29,17 @@ export const AuroraBackground = ({
         <div
           className={cn(
             `
-            [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)]
-            [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
-            [--aurora:repeating-linear-gradient(100deg,var(--cyan-500)_10%,var(--sky-400)_15%,var(--teal-300)_20%,var(--cyan-200)_25%,var(--cyan-400)_30%)]
-            [background-image:var(--dark-gradient),var(--aurora)]
-            [background-size:300%,_200%]
-            [background-position:50%_50%,50%_50%]
-            filter blur-[10px]
-            after:content-[""] after:absolute after:inset-0 after:[background-image:var(--dark-gradient),var(--aurora)]
-            after:[background-size:200%,_100%]
-            after:animate-aurora after:mix-blend-difference
+            [--aurora:repeating-linear-gradient(115deg,hsl(184_55%_85%)_10%,hsl(195_70%_88%)_18%,hsl(180_40%_90%)_25%,hsl(36_70%_88%)_32%,hsl(184_55%_85%)_40%)]
+            [background-image:var(--aurora)]
+            [background-size:200%_180%]
+            [background-position:50%_50%]
+            filter blur-[32px]
+            after:content-[""] after:absolute after:inset-0
+            after:[background-image:var(--aurora)]
+            after:[background-size:160%_140%]
+            after:animate-aurora after:mix-blend-multiply after:opacity-70
             pointer-events-none
-            absolute -inset-[10px] opacity-40 will-change-transform`,
+            absolute -inset-[10px] opacity-70 will-change-transform`,
             showRadialGradient &&
               `[mask-image:radial-gradient(ellipse_at_70%_30%,black_15%,transparent_70%)]`
           )}

@@ -42,31 +42,31 @@ const STATS = [
     label: "Years in Faculty Practice",
     value: DOCTOR.practiceYears,
     suffix: "+",
-    note: "Continuous · since 2017",
+    note: "Continuous since 2017",
   },
   {
     label: "Peer-Reviewed Publications",
     value: 6,
     suffix: "",
-    note: "Across 5 journals",
+    note: "Across five journals",
   },
   {
     label: "Areas of Active Research",
     value: 4,
     suffix: "",
-    note: "Aligners · Implants · Workflow · Cephalometry",
+    note: "Aligners, implants, workflow, cephalometry",
   },
   {
     label: "Professional Affiliations",
     value: 3,
     suffix: "",
-    note: "IOS · IDA · ISPRP",
+    note: "IOS, IDA, ISPRP",
   },
 ];
 
 export function Stats() {
   return (
-    <section className="border-y border-border/60 bg-surface-low/40 backdrop-blur">
+    <section className="border-y border-border bg-surface/40 backdrop-blur">
       <div className="container py-16 md:py-20">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6">
           {STATS.map((s, i) => (
@@ -82,14 +82,14 @@ export function Stats() {
               }}
               className="relative pl-5 border-l border-primary/30"
             >
-              <span className="absolute -left-px top-0 h-8 w-px bg-primary" />
+              <span className="absolute -left-px top-0 h-10 w-px bg-primary" />
               <div className="font-display text-5xl md:text-6xl font-bold text-foreground tracking-tight">
                 <CountUp to={s.value} suffix={s.suffix} />
               </div>
-              <p className="mt-3 font-mono text-[10px] tracking-[0.22em] uppercase text-muted-foreground">
+              <p className="mt-3 text-xs uppercase tracking-[0.16em] text-muted-foreground font-semibold">
                 {s.label}
               </p>
-              <p className="mt-1.5 text-[13px] text-muted-foreground/70">{s.note}</p>
+              <p className="mt-1.5 text-[13px] text-muted-foreground/80">{s.note}</p>
             </motion.div>
           ))}
         </div>

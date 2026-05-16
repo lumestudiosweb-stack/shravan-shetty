@@ -7,7 +7,6 @@ interface Props {
   description?: React.ReactNode;
   align?: "left" | "center";
   className?: string;
-  chapter?: string;
 }
 
 export function SectionHeading({
@@ -16,32 +15,26 @@ export function SectionHeading({
   description,
   align = "left",
   className,
-  chapter,
 }: Props) {
   return (
     <div
       className={cn(
-        "flex flex-col gap-6 max-w-3xl",
+        "flex flex-col gap-5 max-w-3xl",
         align === "center" && "mx-auto text-center items-center",
         className
       )}
     >
       <motion.div
-        initial={{ opacity: 0, y: 14 }}
+        initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         className="flex items-center gap-3"
       >
-        {chapter && (
-          <span className="font-mono text-[0.7rem] font-semibold tracking-[0.22em] text-primary/70">
-            {chapter}
-          </span>
-        )}
-        {chapter && (
-          <span className="h-px w-10 bg-primary/30" aria-hidden="true" />
-        )}
-        <span className="eyebrow text-primary">{eyebrow}</span>
+        <span className="h-px w-10 bg-primary/50" aria-hidden="true" />
+        <span className="text-xs uppercase tracking-[0.18em] text-primary font-semibold">
+          {eyebrow}
+        </span>
       </motion.div>
       <motion.h2
         initial={{ opacity: 0, y: 18 }}
