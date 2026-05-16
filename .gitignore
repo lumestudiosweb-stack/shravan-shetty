@@ -1,11 +1,23 @@
+# Vite / Node
+node_modules/
+dist/
+*.tsbuildinfo
+
 # Local design references (not for publishing)
 stitch_modern_dental_studio/
 
-# Original source images (copies live in images/ with clean names)
+# Original source images (live versions live in public/images)
 /1706939080708.jpg
 /1706939095321.jpg
 /1706939109262.jpg
 /image.jpg
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.ghauth.log
 
 # OS / editor
 .DS_Store

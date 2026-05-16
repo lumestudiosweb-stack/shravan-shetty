@@ -1,0 +1,246 @@
+export const DOCTOR = {
+  honorific: "Dr.",
+  firstName: "Shravan",
+  lastName: "Shetty",
+  fullName: "Dr. Shravan Shetty",
+  title: "Assistant Professor",
+  department: "Orthodontics & Dentofacial Orthopaedics",
+  institution: "Manipal College of Dental Sciences",
+  institutionShort: "MCODS",
+  city: "Mangaluru",
+  startYear: 2017,
+  practiceYears: new Date().getFullYear() - 2017,
+  email: "shravan.shetty@manipal.edu",
+  linkedin: "https://linkedin.com/in/dr-shravan-shetty-a0a016276",
+  linkedinHandle: "dr-shravan-shetty",
+  tagline:
+    "Bridging clinical orthodontics with digital workflow design — biomechanics, aligners, and a research practice rooted in evidence.",
+  shortTagline:
+    "Orthodontic biomechanics, clear aligner therapy and digital workflow research.",
+  photo: "./images/dr-shravan-shetty.jpg",
+};
+
+export const SPECIALTIES = [
+  {
+    code: "01",
+    title: "Clear Aligner Therapy",
+    blurb:
+      "Digital case planning, attachment design, staging and clinical finishing across the full aligner workflow.",
+    keywords: ["staging", "attachments", "refinement"],
+  },
+  {
+    code: "02",
+    title: "Orthodontic Biomechanics",
+    blurb:
+      "Force-system design, anchorage planning, bracket prescription and mechanics tailored to each malocclusion.",
+    keywords: ["forces", "moments", "anchorage"],
+  },
+  {
+    code: "03",
+    title: "Lingual Orthodontics",
+    blurb:
+      "Aesthetic appliance therapy hidden behind the teeth — indirect bonding, customised mechanics and bite management.",
+    keywords: ["indirect bonding", "customisation", "aesthetics"],
+  },
+  {
+    code: "04",
+    title: "Micro-Implant Research",
+    blurb:
+      "Resonance frequency analysis, primary stability evaluation and in-vivo behaviour of orthodontic mini-implants.",
+    keywords: ["RFA", "stability", "in-vivo"],
+  },
+];
+
+export const ROTATING_TITLES = [
+  "Clear Aligner Therapy.",
+  "Orthodontic Biomechanics.",
+  "Lingual Orthodontics.",
+  "Micro-Implant Research.",
+  "Digital Workflow Design.",
+];
+
+export const QUALIFICATIONS = [
+  {
+    degree: "MDS",
+    field: "Orthodontics & Dentofacial Orthopaedics",
+    institution: "SDM College of Dental Sciences",
+    location: "Dharwad",
+    year: 2016,
+  },
+  {
+    degree: "BDS",
+    field: "Bachelor of Dental Surgery",
+    institution: "Yenepoya Dental College",
+    location: "RGUHS",
+    year: 2012,
+  },
+];
+
+export const TEACHING = {
+  subject: "Orthodontics & Dentofacial Orthopaedics",
+  cohorts: ["3rd Year BDS", "4th Year BDS", "PG Mentoring"],
+};
+
+export const AFFILIATIONS = [
+  {
+    name: "Indian Orthodontic Society",
+    short: "IOS",
+    status: "Life Member",
+    note: "National professional body for orthodontists",
+  },
+  {
+    name: "Indian Dental Association",
+    short: "IDA",
+    status: "Life Member",
+    note: "Premier body of dental professionals in India",
+  },
+  {
+    name: "5th National ISPRP Conference",
+    short: "ISPRP 2012",
+    status: "Organising Committee",
+    note: "Mangalore, Karnataka · 2012",
+  },
+];
+
+export type Publication = {
+  id: string;
+  year: number;
+  title: string;
+  authors: string;
+  journal: string;
+  volume: string;
+  tag: "clinical" | "research" | "review" | "device";
+  abstract?: string;
+  featured?: boolean;
+  photo?: string;
+};
+
+export const PUBLICATIONS: Publication[] = [
+  {
+    id: "P-001",
+    year: 2019,
+    title:
+      "Digital India, Digitizing the Orthodontic Office — Our Experience with Design and Implementation of a Contemporary Patient Management System",
+    authors: "Jose NP, Shetty S, Naik DG, Shetty S, Desai A, Ashith MV, Mary L",
+    journal: "Indian Journal of Public Health Research & Development",
+    volume: "10(4): 278–282",
+    tag: "research",
+    featured: true,
+    abstract:
+      "A practice report on the design and rollout of a contemporary patient management system inside an academic orthodontic department — covering scheduling, clinical records, imaging integration, and reporting. The paper outlines design choices, workflow shifts and lessons learned from migrating an established clinic onto a fully digital stack.",
+    photo: "./images/aligner-masterclass.jpg",
+  },
+  {
+    id: "P-002",
+    year: 2019,
+    title:
+      "A Comparative Evaluation of Reliability of an Android-based App and Computerised Cephalometric Tracing Program for Orthodontic Cephalometric Analysis",
+    authors: "Shettigar P, Shetty S, Naik RD, Basavaraddi SM, Patil AK",
+    journal: "Biomedical & Pharmacology Journal",
+    volume: "12(1): 341–346",
+    tag: "research",
+    featured: true,
+    abstract:
+      "The study assessed the Android smartphone-based OneCeph app against the gold-standard Dolphin Imaging system across 50 cephalometric radiographs with 20 landmarks and 15 skeletal, dental and soft-tissue parameters. Only four parameters showed statistically significant differences; eleven demonstrated strong positive correlation — establishing the smartphone app as clinically viable for routine cephalometric work.",
+    photo: "./images/orthobyte-2020.jpg",
+  },
+  {
+    id: "P-003",
+    year: 2018,
+    title: "A Simple Aligner Removal Tool",
+    authors: "Shetty S",
+    journal: "Journal of Aligner Orthodontics",
+    volume: "2(2): 151",
+    tag: "device",
+  },
+  {
+    id: "P-004",
+    year: 2017,
+    title: "Facile Stabilizer for Lingual Retainer Wires",
+    authors: "Shetty S, Naik RD, Patil AK",
+    journal: "International Journal of Orthodontics (Milwaukee)",
+    volume: "28(1): 43–45",
+    tag: "device",
+  },
+  {
+    id: "P-005",
+    year: 2016,
+    title:
+      "Evaluation of Orthodontic Micro-Implant Stability using Resonance Frequency Analysis: An In Vivo Study",
+    authors: "Shetty S, Naik R, Patil A",
+    journal: "Journal of Contemporary Orthodontics",
+    volume: "1(1): 5–12",
+    tag: "research",
+  },
+  {
+    id: "P-006",
+    year: 2012,
+    title:
+      "Evaluation of Efficacy of Microwave Oven Irradiation in Disinfection of Patient-Derived Dental Cast",
+    authors: "Bhat V, Shenoy K, Shetty S",
+    journal: "International Journal of Infection Control",
+    volume: "8(3): 1–4",
+    tag: "clinical",
+  },
+];
+
+export const TEACHING_GALLERY = [
+  {
+    src: "./images/aligner-masterclass.jpg",
+    title: "In-House Aligner Masterclass",
+    venue: "Amrita Institute of Medical Sciences",
+    kind: "Masterclass",
+    year: "2023",
+  },
+  {
+    src: "./images/workshop.jpg",
+    title: "Clinical Aligner Workshop",
+    venue: "Practitioner Workshop",
+    kind: "Workshop",
+    year: "2022",
+  },
+  {
+    src: "./images/orthobyte-2020.jpg",
+    title: "Orthobyte · Digital Orthodontics",
+    venue: "IOS · SMILE 2020",
+    kind: "Conference",
+    year: "2020",
+  },
+];
+
+export const RESEARCH_FOCUS = [
+  { label: "Micro-Implant Stability", code: "RFA" },
+  { label: "Aligner Therapy Evidence", code: "CAT" },
+  { label: "Digital Cephalometry", code: "DCG" },
+  { label: "Clinic Digitisation", code: "DWF" },
+];
+
+export const TIMELINE = [
+  {
+    year: 2017,
+    end: "present",
+    title: "Assistant Professor",
+    org: "Manipal College of Dental Sciences",
+    location: "Mangaluru",
+    detail:
+      "Faculty teaching, research supervision, infection control committee, and clinical practice.",
+  },
+  {
+    year: 2016,
+    end: 2016,
+    title: "MDS Orthodontics — Graduated",
+    org: "SDM College of Dental Sciences",
+    location: "Dharwad",
+    detail:
+      "Postgraduate residency in Orthodontics & Dentofacial Orthopaedics.",
+  },
+  {
+    year: 2012,
+    end: 2012,
+    title: "BDS — Graduated",
+    org: "Yenepoya Dental College",
+    location: "RGUHS",
+    detail:
+      "Bachelor of Dental Surgery, including organising committee for 5th National ISPRP Conference.",
+  },
+];
