@@ -1,0 +1,15 @@
+# Local design references (not for publishing)
+stitch_modern_dental_studio/
+
+# Original source images (copies live in images/ with clean names)
+/1706939080708.jpg
+/1706939095321.jpg
+/1706939109262.jpg
+/image.jpg
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

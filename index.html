@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Shravan Shetty | Orthodontist, Academician & Researcher</title>
+<meta name="description" content="Dr. Shravan Shetty, Assistant Professor of Orthodontics at MCODS Mangalore. Clear aligner specialist, published researcher, and international speaker in orthodontic biomechanics."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23162839'/%3E%3Ctext x='50' y='68' font-family='Playfair Display, serif' font-size='56' font-weight='700' fill='%23e9c349' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-dim": "#d7dbda",
+          "secondary-container": "#d4e6e5",
+          "outline-variant": "#c4c6cd",
+          "inverse-on-surface": "#eef1f0",
+          "tertiary-fixed-dim": "#e9c349",
+          "on-primary-container": "#96a9be",
+          "on-primary-fixed": "#091d2e",
+          "on-secondary-container": "#576867",
+          "primary-fixed-dim": "#b5c8df",
+          "on-tertiary-fixed": "#241a00",
+          "tertiary-container": "#cca730",
+          "on-primary-fixed-variant": "#36485b",
+          "primary": "#162839",
+          "secondary": "#516161",
+          "on-tertiary-fixed-variant": "#574500",
+          "on-secondary-fixed-variant": "#3a4a49",
+          "surface-container-high": "#e6e9e8",
+          "primary-container": "#2c3e50",
+          "surface-variant": "#e0e3e2",
+          "surface-tint": "#4e6073",
+          "on-primary": "#ffffff",
+          "on-secondary-fixed": "#0e1e1e",
+          "surface-container-highest": "#e0e3e2",
+          "on-surface": "#181c1c",
+          "surface-bright": "#f7faf9",
+          "on-tertiary": "#ffffff",
+          "background": "#f7faf9",
+          "tertiary": "#735c00",
+          "secondary-fixed": "#d4e6e5",
+          "surface-container": "#ebeeed",
+          "surface-container-low": "#f1f4f3",
+          "secondary-fixed-dim": "#b8cac9",
+          "on-background": "#181c1c",
+          "primary-fixed": "#d1e4fb",
+          "on-surface-variant": "#43474c",
+          "inverse-surface": "#2d3131",
+          "inverse-primary": "#b5c8df",
+          "on-secondary": "#ffffff",
+          "tertiary-fixed": "#ffe088",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#74777d",
+          "surface": "#f7faf9",
+          "on-tertiary-container": "#4f3d00"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem",
+          lg: "0.5rem",
+          xl: "0.75rem",
+          "2xl": "1rem",
+          "3xl": "1.5rem",
+          full: "9999px"
+        },
+        spacing: {
+          "section-gap-lg": "120px",
+          "section-gap-md": "80px",
+          "gutter": "24px",
+          "margin-mobile": "20px",
+          "unit": "8px",
+          "container-max": "1280px"
+        },
+        fontFamily: {
+          serif: ["'Playfair Display'", "serif"],
+          sans: ["Inter", "sans-serif"]
+        },
+        fontSize: {
+          "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
+          "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+          "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+          "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+          "headline-lg": ["36px", { lineHeight: "1.3", fontWeight: "600" }],
+          "headline-xl-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+          "headline-xl": ["56px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .font-serif { font-family: 'Playfair Display', serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(224, 230, 228, 0.6);
+  }
+  .section-anchor { scroll-margin-top: 96px; }
+  /* Mobile nav */
+  #mobile-menu { transition: max-height 0.3s ease; max-height: 0; overflow: hidden; }
+  #mobile-menu.open { max-height: 360px; }
+  /* Nav link active indicator */
+  .nav-link { position: relative; padding-bottom: 6px; }
+  .nav-link.active { color: #162839; }
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 2px;
+    background: #e9c349;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
+  <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
+    <a href="#home" class="font-serif text-headline-md font-bold text-primary leading-none">
+      Dr. Shravan Shetty
+    </a>
+    <div class="hidden lg:flex items-center space-x-8">
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#home">Home</a>
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#academic">Academic</a>
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#research">Research</a>
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#expertise">Expertise</a>
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#publications">Publications</a>
+      <a class="nav-link text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden md:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-lg text-label-caps hover:bg-primary-container transition-all active:scale-95">
+        Get in Touch
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-surface-container" aria-label="Toggle menu">
+        <span class="material-symbols-outlined text-primary">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden border-t border-outline-variant/30 bg-surface">
+    <div class="px-gutter py-4 flex flex-col space-y-3">
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#home">Home</a>
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#academic">Academic</a>
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#research">Research</a>
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#expertise">Expertise</a>
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#publications">Publications</a>
+      <a class="text-body-md text-on-surface-variant hover:text-primary py-1" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="section-anchor relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+  <!-- Decorative background blobs -->
+  <div class="absolute top-20 -right-32 w-96 h-96 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+    <div class="md:col-span-7">
+      <span class="text-label-caps text-tertiary-fixed-dim uppercase tracking-widest mb-5 block" style="color:#a8861f;">
+        Orthodontist · Academician · Researcher
+      </span>
+      <h1 class="font-serif text-headline-xl-mobile md:text-headline-xl text-primary mb-6">
+        Dr. Shravan Shetty
+      </h1>
+      <p class="text-body-lg text-on-surface-variant max-w-xl mb-4">
+        Assistant Professor, Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore.
+      </p>
+      <p class="text-body-md text-secondary max-w-xl mb-8 italic">
+        Bridging clinical precision with digital innovation in modern orthodontic care.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-10">
+        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Clear Aligner Specialist</span>
+        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Digital Planning</span>
+        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">International Speaker</span>
+        <span class="px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-label-caps">Published Researcher</span>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="#publications" class="inline-flex items-center gap-2 bg-primary text-on-primary px-7 py-4 rounded-lg text-label-caps hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+          View Publications
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+        <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-secondary-fixed text-primary px-7 py-4 rounded-lg text-label-caps hover:bg-secondary-fixed-dim transition-all">
+          <span class="material-symbols-outlined text-base">link</span>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="md:col-span-5 relative mt-14 md:mt-0">
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border-4 border-surface-container-lowest max-w-md mx-auto">
+        <img alt="Dr. Shravan Shetty" class="w-full h-full object-cover" src="images/dr-shravan-shetty.jpg"/>
+      </div>
+      <div class="absolute -bottom-6 -left-2 md:-left-6 glass-card p-5 md:p-6 rounded-2xl shadow-lg max-w-[260px]">
+        <p class="font-serif text-headline-md text-primary italic leading-snug mb-2">
+          "Precision is a discipline, not an event."
+        </p>
+        <p class="text-body-sm text-secondary">— Dr. Shravan Shetty</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS STRIP ============ -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant/30">
+  <div class="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+    <div>
+      <div class="font-serif text-headline-lg text-primary mb-1">10+</div>
+      <p class="text-body-sm text-on-surface-variant">Years in Clinical Practice</p>
+    </div>
+    <div>
+      <div class="font-serif text-headline-lg text-primary mb-1">7</div>
+      <p class="text-body-sm text-on-surface-variant">Peer-Reviewed Publications</p>
+    </div>
+    <div>
+      <div class="font-serif text-headline-lg text-primary mb-1">MDS</div>
+      <p class="text-body-sm text-on-surface-variant">Orthodontics, SDM Dharwad</p>
+    </div>
+    <div>
+      <div class="font-serif text-headline-lg text-primary mb-1">MCODS</div>
+      <p class="text-body-sm text-on-surface-variant">Mangalore, 2017 – present</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACADEMIC ============ -->
+<section id="academic" class="section-anchor py-section-gap-lg">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">01 · Academic</span>
+      <h2 class="font-serif text-headline-lg text-primary mb-4">Role &amp; Teaching</h2>
+      <p class="text-body-md text-on-surface-variant">
+        A decade of academic medicine — shaping the next generation of orthodontists while contributing to institutional clinical governance.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <!-- Current Role -->
+      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary">co_present</span>
+        </div>
+        <h3 class="font-serif text-headline-md text-primary mb-3">Current Role</h3>
+        <p class="text-body-md text-on-surface-variant mb-4">
+          Assistant Professor in the Department of Orthodontics &amp; Dentofacial Orthopaedics at Manipal College of Dental Sciences, Mangalore.
+        </p>
+        <p class="text-body-sm text-secondary">
+          Member of the Infection Control Committee. Actively involved in research projects alongside teaching responsibilities.
+        </p>
+      </div>
+
+      <!-- Teaching -->
+      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary">school</span>
+        </div>
+        <h3 class="font-serif text-headline-md text-primary mb-3">Currently Teaching</h3>
+        <p class="text-body-md text-on-surface-variant mb-4">
+          Orthodontics and Dentofacial Orthopaedics
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">3rd Year BDS</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">4th Year BDS</span>
+        </div>
+        <p class="text-body-sm text-secondary mt-4">
+          Mentors undergraduate and postgraduate students across clinical and theoretical curricula.
+        </p>
+      </div>
+
+      <!-- Qualifications -->
+      <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary">workspace_premium</span>
+        </div>
+        <h3 class="font-serif text-headline-md text-primary mb-3">Qualifications</h3>
+        <div class="space-y-4">
+          <div>
+            <p class="font-semibold text-on-surface">MDS — Orthodontics &amp; Dentofacial Orthopaedics</p>
+            <p class="text-body-sm text-secondary">SDM College of Dental Sciences, Dharwad · 2016</p>
+          </div>
+          <div class="pt-3 border-t border-outline-variant/40">
+            <p class="font-semibold text-on-surface">BDS</p>
+            <p class="text-body-sm text-secondary">Yenepoya Dental College, RGUHS · 2012</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience timeline -->
+    <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+      <h3 class="font-serif text-headline-md text-primary mb-8 flex items-center gap-3">
+        <span class="material-symbols-outlined text-tertiary-fixed-dim" style="color:#a8861f;">timeline</span>
+        Professional Experience
+      </h3>
+      <div class="relative pl-8 md:pl-12 border-l-2 border-secondary-fixed-dim">
+        <div class="relative">
+          <div class="absolute -left-[42px] md:-left-[50px] top-1 w-5 h-5 rounded-full bg-primary border-4 border-background"></div>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
+            <h4 class="font-serif text-headline-md text-primary">Assistant Professor</h4>
+            <span class="text-label-caps text-on-surface-variant">2017 — Present</span>
+          </div>
+          <p class="text-body-md text-secondary">
+            Department of Orthodontics &amp; Dentofacial Orthopaedics, Manipal College of Dental Sciences, Mangalore
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" class="section-anchor py-section-gap-lg bg-surface-container-low">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">02 · Research</span>
+      <h2 class="font-serif text-headline-lg text-primary mb-4">Featured Research</h2>
+      <p class="text-body-md text-on-surface-variant">
+        Investigating the intersection of digital tools, orthodontic biomechanics, and clinical workflow.
+      </p>
+    </div>
+
+    <!-- Featured paper 1 -->
+    <article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-outline-variant mb-8 grid grid-cols-1 lg:grid-cols-5 gap-0">
+      <div class="lg:col-span-2 relative min-h-[280px] lg:min-h-[400px]">
+        <img alt="Dr. Shravan Shetty presenting at Orthobyte 2020" src="images/orthobyte-2020.jpg" class="absolute inset-0 w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+        <span class="absolute top-5 left-5 px-3 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-label-caps">June 2019</span>
+      </div>
+      <div class="lg:col-span-3 p-8 md:p-12">
+        <p class="text-label-caps uppercase tracking-widest text-secondary mb-3">Biomed &amp; Pharmacology Journal · 12(1), 341–346</p>
+        <h3 class="font-serif text-headline-md md:text-headline-lg text-primary mb-4 leading-tight">
+          A Comparative Evaluation of Reliability of an Android-based App and Computerized Cephalometric Tracing Program for Orthodontic Cephalometric Analysis
+        </h3>
+        <p class="text-body-sm text-secondary mb-5">
+          Shettigar P, <strong class="text-primary">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK
+        </p>
+        <p class="text-body-md text-on-surface-variant mb-6">
+          This study assessed the reliability of the Android smartphone-based OneCeph app against Dolphin Imaging — the established gold-standard computerised cephalometric tracing program. Across 50 cephalometric radiographs, 20 landmarks and 15 skeletal, dental, and soft-tissue parameters were measured and compared by paired <em>t</em>-test. Only 4 of 15 parameters showed statistically significant differences (<em>p</em> &lt; 0.05); the remaining 11 demonstrated strong positive correlation. The OneCeph app proved reliable, user-friendly, and clinically usable for day-to-day cephalometric analysis.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Cephalometry</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Digital Radiography</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Smartphone Apps</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Computers</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Featured paper 2 -->
+    <article class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-outline-variant grid grid-cols-1 lg:grid-cols-5 gap-0">
+      <div class="lg:col-span-3 p-8 md:p-12 order-2 lg:order-1">
+        <p class="text-label-caps uppercase tracking-widest text-secondary mb-3">Indian Journal of Public Health Research &amp; Development · 10(4), 278–282</p>
+        <h3 class="font-serif text-headline-md md:text-headline-lg text-primary mb-4 leading-tight">
+          Digital India, Digitizing the Orthodontic Office — Our Experience with Design and Implementation of a Contemporary Patient Management System
+        </h3>
+        <p class="text-body-sm text-secondary mb-5">
+          Jose NP, <strong class="text-primary">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L
+        </p>
+        <p class="text-body-md text-on-surface-variant mb-6">
+          A practice report on the design and rollout of a contemporary, paperless patient management system within an academic orthodontic department — covering scheduling, clinical records, imaging integration, and reporting. The paper outlines design choices, departmental workflow shifts, and lessons learned from migrating an established clinic onto a fully digital stack.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Digital Workflow</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Clinic Software</span>
+          <span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-body-sm">Practice Design</span>
+        </div>
+      </div>
+      <div class="lg:col-span-2 relative min-h-[280px] lg:min-h-[400px] order-1 lg:order-2">
+        <img alt="Aligner masterclass teaching session" src="images/aligner-masterclass.jpg" class="absolute inset-0 w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+        <span class="absolute top-5 left-5 px-3 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-label-caps">June 2019</span>
+      </div>
+    </article>
+
+    <div class="text-center mt-12">
+      <a href="#publications" class="inline-flex items-center gap-2 text-label-caps text-primary hover:text-primary-container transition-colors">
+        View full publication list
+        <span class="material-symbols-outlined text-base">arrow_downward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section id="expertise" class="section-anchor py-section-gap-lg">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">03 · Expertise</span>
+      <h2 class="font-serif text-headline-lg text-primary mb-4">Areas of Practice &amp; Interest</h2>
+      <p class="text-body-md text-on-surface-variant">
+        From orthodontic biomechanics to clear aligner therapy and micro-implant research.
+      </p>
+    </div>
+
+    <!-- Bento grid: 3 areas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <!-- Areas of Interest (big card) -->
+      <div class="md:col-span-2 md:row-span-1 bg-primary text-on-primary p-10 md:p-12 rounded-3xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        </div>
+        <div class="relative z-10">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim mb-4 text-3xl">favorite</span>
+          <h3 class="font-serif text-headline-md mb-6">Areas of Interest</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
+              <span class="material-symbols-outlined text-base">tune</span>
+              Orthodontic Biomechanics
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
+              <span class="material-symbols-outlined text-base">dentistry</span>
+              Lingual Orthodontics
+            </span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-on-primary/10 backdrop-blur rounded-full text-body-sm border border-on-primary/20">
+              <span class="material-symbols-outlined text-base">align_horizontal_center</span>
+              Clear Aligner Treatment
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expertise -->
+      <div class="bg-secondary-fixed p-8 rounded-3xl">
+        <span class="material-symbols-outlined text-primary mb-4 text-3xl">verified</span>
+        <h3 class="font-serif text-headline-md text-primary mb-3">Expertise</h3>
+        <p class="text-body-md text-on-secondary-fixed-variant">
+          Orthodontic treatment mechanics — full-arch planning, force-system design, and case finishing across fixed and removable appliances.
+        </p>
+      </div>
+
+      <!-- Research -->
+      <div class="md:col-span-2 bg-tertiary-fixed/40 p-8 md:p-10 rounded-3xl">
+        <span class="material-symbols-outlined mb-4 text-3xl" style="color:#735c00;">biotech</span>
+        <h3 class="font-serif text-headline-md text-primary mb-3">Active Research Focus</h3>
+        <p class="text-body-md text-on-tertiary-fixed-variant mb-4">
+          Investigating orthodontic micro-implant stability and clinical performance, alongside the evolving evidence base for clear aligner therapy.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-surface-container-lowest text-on-tertiary-fixed-variant rounded-full text-body-sm border border-tertiary-fixed-dim/40">Micro-implants</span>
+          <span class="px-3 py-1 bg-surface-container-lowest text-on-tertiary-fixed-variant rounded-full text-body-sm border border-tertiary-fixed-dim/40">Aligner Therapy</span>
+        </div>
+      </div>
+
+      <!-- Affiliations card -->
+      <div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant">
+        <span class="material-symbols-outlined text-primary mb-4 text-3xl">groups</span>
+        <h3 class="font-serif text-headline-md text-primary mb-4">Affiliations</h3>
+        <ul class="space-y-3 text-body-sm text-on-surface-variant">
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
+            <span><strong class="text-primary">Life Member</strong>, Indian Orthodontic Society (IOS)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
+            <span><strong class="text-primary">Life Member</strong>, Indian Dental Association (IDA)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-tertiary-fixed-dim text-base mt-0.5" style="color:#a8861f;">check_circle</span>
+            <span><strong class="text-primary">Organizing Committee</strong>, 5th National ISPRP Conference, Mangalore (2012)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Teaching & Speaking gallery -->
+    <div class="mt-20">
+      <div class="flex items-end justify-between mb-8 flex-wrap gap-4">
+        <div>
+          <span class="text-label-caps uppercase tracking-widest mb-2 block" style="color:#a8861f;">Engagement</span>
+          <h3 class="font-serif text-headline-md text-primary">Teaching &amp; Speaking</h3>
+        </div>
+        <p class="text-body-sm text-secondary max-w-md">
+          Regular contributor at clinical workshops, masterclasses, and academic conferences on digital orthodontics and aligner planning.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative rounded-3xl overflow-hidden shadow-sm aspect-[4/3] group">
+          <img alt="In-house aligner masterclass" src="images/aligner-masterclass.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-on-primary">
+            <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim">Masterclass</span>
+            <h4 class="font-serif text-headline-md mt-2">In-House Aligner Masterclass</h4>
+            <p class="text-body-sm opacity-80 mt-1">Hands-on training in digital aligner planning</p>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden shadow-sm aspect-[4/3] group">
+          <img alt="Clinical workshop" src="images/workshop.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-on-primary">
+            <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim">Workshop</span>
+            <h4 class="font-serif text-headline-md mt-2">Clinical Aligner Workshop</h4>
+            <p class="text-body-sm opacity-80 mt-1">Software-driven case planning with practitioners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="section-anchor py-section-gap-lg bg-surface-container-low">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-label-caps uppercase tracking-widest mb-3 block" style="color:#a8861f;">04 · Publications</span>
+      <h2 class="font-serif text-headline-lg text-primary mb-4">Selected Publications</h2>
+      <p class="text-body-md text-on-surface-variant">
+        Peer-reviewed work in cephalometric analysis, digital workflow, micro-implant stability, and clinical orthodontic appliances.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-4">
+
+      <!-- Pub 1 (2019) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2019</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              Digital India, Digitizing the Orthodontic Office — Our Experience with Design and Implementation of a Contemporary Patient Management System
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              Jose NP, <strong class="text-primary">Shetty S</strong>, Naik DG, Shetty S, Desai A, Ashith MV, Mary L
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              Indian Journal of Public Health Research &amp; Development · 10(4): 278–282
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pub 2 (2019) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2019</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              A Comparative Evaluation of Reliability of an Android-based App and Computerized Cephalometric Tracing Program for Orthodontic Cephalometric Analysis
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              Shettigar P, <strong class="text-primary">Shetty S</strong>, Naik RD, Basavaraddi SM, Patil AK
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              Biomed &amp; Pharmacology Journal · 12(1): 341–346
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pub 3 (2018) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2018</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              A Simple Aligner Removal Tool
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              <strong class="text-primary">Shetty S</strong>
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              Journal of Aligner Orthodontics · 2(2): 151
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pub 4 (2017) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2017</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              Facile Stabilizer for Lingual Retainer Wires
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              <strong class="text-primary">Shetty S</strong>, Naik RD, Patil AK
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              International Journal of Orthodontics (Milwaukee) · Spring, 28(1): 43–45
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pub 5 (2016) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2016</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              Evaluation of Orthodontic Micro-Implant Stability using Resonance Frequency Analysis: An In Vivo Study
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              <strong class="text-primary">Shetty S</strong>, Naik R, Patil A
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              Journal of Contemporary Orthodontics · 1(1): 5–12
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pub 6 (2012) -->
+      <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-6 md:p-8 hover:shadow-md hover:border-secondary-fixed-dim transition-all">
+        <div class="flex gap-5 md:gap-7">
+          <div class="flex-shrink-0">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-tertiary-fixed/40 rounded-xl flex items-center justify-center">
+              <span class="font-serif text-primary font-bold text-lg md:text-xl">2012</span>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif text-headline-md text-primary mb-2 leading-snug">
+              Evaluation of Efficacy of Microwave Oven Irradiation in Disinfection of Patient-Derived Dental Cast
+            </h3>
+            <p class="text-body-sm text-secondary mb-2">
+              Bhat V, Shenoy K, <strong class="text-primary">Shetty S</strong>
+            </p>
+            <p class="text-body-sm text-on-surface-variant italic">
+              International Journal of Infection Control · 8(3): 1–4
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / CTA ============ -->
+<section id="contact" class="section-anchor py-section-gap-lg">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="bg-primary rounded-3xl p-10 md:p-20 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+      </div>
+      <div class="absolute -top-32 -right-32 w-96 h-96 bg-tertiary-fixed/20 rounded-full blur-3xl"></div>
+
+      <div class="relative z-10 text-center max-w-2xl mx-auto">
+        <span class="text-label-caps uppercase tracking-widest text-tertiary-fixed-dim mb-4 block">05 · Get in Touch</span>
+        <h2 class="font-serif text-headline-lg md:text-headline-xl-mobile text-on-primary mb-6">
+          Let's Connect
+        </h2>
+        <p class="text-body-lg text-on-primary-container mb-10">
+          Open to academic collaborations, speaking invitations, research partnerships, and discussions on digital orthodontic workflows.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-lg text-label-caps hover:scale-105 transition-transform shadow-lg">
+            <span class="material-symbols-outlined text-base">link</span>
+            Connect on LinkedIn
+          </a>
+          <a href="mailto:shravan.shetty@manipal.edu" class="inline-flex items-center gap-2 bg-on-primary/10 backdrop-blur border border-on-primary/20 text-on-primary px-8 py-4 rounded-lg text-label-caps hover:bg-on-primary/20 transition-all">
+            <span class="material-symbols-outlined text-base">mail</span>
+            Send an Email
+          </a>
+        </div>
+        <p class="mt-8 text-body-sm text-on-primary-container">
+          Department of Orthodontics &amp; Dentofacial Orthopaedics · MCODS Mangalore
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary text-on-primary border-t border-on-primary/10">
+  <div class="max-w-container-max mx-auto px-gutter py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="text-center md:text-left">
+      <div class="font-serif text-headline-md text-on-primary mb-1">Dr. Shravan Shetty</div>
+      <p class="text-body-sm text-primary-fixed-dim/80">
+        © <span id="year">2026</span> · Assistant Professor, MCODS Mangalore
+      </p>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="#home" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Home</a>
+      <a href="#research" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Research</a>
+      <a href="#publications" class="text-body-sm text-primary-fixed-dim/80 hover:text-on-primary transition-colors">Publications</a>
+      <a href="https://linkedin.com/in/dr-shravan-shetty-a0a016276" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-primary-fixed-dim hover:text-tertiary-fixed-dim transition-colors">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu.classList.toggle('open'));
+  menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const setActive = () => {
+    const y = window.scrollY + 120;
+    let current = 'home';
+    sections.forEach(s => { if (s.offsetTop <= y) current = s.id; });
+    navLinks.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+  };
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+</script>
+
+</body>
+</html>
