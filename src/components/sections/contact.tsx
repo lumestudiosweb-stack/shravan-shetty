@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, AtSign, Linkedin, MapPin } from "lucide-react";
+import { ArrowUpRight, AtSign, Linkedin, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DOCTOR } from "@/lib/doctor";
 
@@ -49,13 +49,24 @@ export function Contact() {
                   size="lg"
                   className="h-12 px-7 text-sm font-semibold"
                 >
+                  <a href={`tel:${DOCTOR.phoneTel}`}>
+                    <Phone className="h-4 w-4" />
+                    Call {DOCTOR.phoneDisplay}
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="h-12 px-7"
+                >
                   <a
                     href={DOCTOR.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Linkedin className="h-4 w-4" />
-                    Connect on LinkedIn
+                    LinkedIn
                   </a>
                 </Button>
                 <Button
@@ -73,6 +84,13 @@ export function Contact() {
             </div>
 
             <div className="col-span-12 lg:col-span-5 lg:pl-10 lg:border-l border-border space-y-2">
+              <ContactRow
+                kind="Phone"
+                icon={<Phone className="h-3.5 w-3.5" />}
+                primary={DOCTOR.phoneDisplay}
+                secondary="For queries &amp; appointments"
+                href={`tel:${DOCTOR.phoneTel}`}
+              />
               <ContactRow
                 kind="LinkedIn"
                 icon={<Linkedin className="h-3.5 w-3.5" />}

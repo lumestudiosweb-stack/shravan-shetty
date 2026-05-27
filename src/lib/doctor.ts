@@ -11,6 +11,8 @@ export const DOCTOR = {
   startYear: 2017,
   practiceYears: new Date().getFullYear() - 2017,
   email: "shravan.shetty@manipal.edu",
+  phoneDisplay: "+91 74111 97827",
+  phoneTel: "+917411197827",
   linkedin: "https://linkedin.com/in/dr-shravan-shetty-a0a016276",
   linkedinHandle: "dr-shravan-shetty",
   tagline:

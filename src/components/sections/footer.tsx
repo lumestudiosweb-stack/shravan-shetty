@@ -22,6 +22,7 @@ const COLS = [
   {
     title: "Reach",
     links: [
+      { href: `tel:${DOCTOR.phoneTel}`, label: DOCTOR.phoneDisplay },
       { href: DOCTOR.linkedin, label: "LinkedIn", external: true },
       { href: `mailto:${DOCTOR.email}`, label: DOCTOR.email },
     ],

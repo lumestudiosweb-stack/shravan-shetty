@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Linkedin, Quote } from "lucide-react";
+import { ArrowRight, Linkedin, Phone, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { DOCTOR, ROTATING_TITLES } from "@/lib/doctor";
@@ -101,6 +101,12 @@ export function Hero() {
               className="mt-10 flex flex-wrap gap-3"
             >
               <Button asChild size="lg" className="h-12 px-7 text-sm font-semibold">
+                <a href={`tel:${DOCTOR.phoneTel}`}>
+                  <Phone className="h-4 w-4" />
+                  {DOCTOR.phoneDisplay}
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="h-12 px-7">
                 <a href="#publications">
                   Explore the Work
                   <ArrowRight className="h-4 w-4" />
