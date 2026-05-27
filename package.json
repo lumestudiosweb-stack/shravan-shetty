@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node -e \"import('node:fs/promises').then(async fs=>{const cp=async(s,d)=>{try{await fs.rm(d,{recursive:true,force:true})}catch{};await fs.cp(s,d,{recursive:true})};await fs.cp('dist/index.html','./index.html');await cp('dist/images','./images');for(const f of ['robots.txt','sitemap.xml','manifest.webmanifest','og-image.jpg','favicon.svg']){try{await fs.cp(`dist/${f}`,`./${f}`)}catch{}}})\"",
+    "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
