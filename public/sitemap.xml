@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://shravan-shetty.vercel.app/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shravan-shetty.vercel.app/images/dr-shravan-shetty.jpg</image:loc>
+      <image:title>Dr. Shravan Shetty — Portrait</image:title>
+      <image:caption>Dr. Shravan Shetty, Assistant Professor of Orthodontics at MCODS Mangaluru</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shravan-shetty.vercel.app/images/orthobyte-2020.jpg</image:loc>
+      <image:title>Orthobyte 2020 — Digital Orthodontics</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://shravan-shetty.vercel.app/images/aligner-masterclass.jpg</image:loc>
+      <image:title>In-House Aligner Masterclass — Amrita Institute</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://shravan-shetty.vercel.app/images/workshop.jpg</image:loc>
+      <image:title>Clinical Aligner Workshop</image:title>
+    </image:image>
+  </url>
+</urlset>

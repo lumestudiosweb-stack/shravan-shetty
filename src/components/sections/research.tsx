@@ -55,8 +55,9 @@ export function Research() {
                 {p.photo && (
                   <img
                     src={p.photo}
-                    alt={p.title}
+                    alt={`Illustration for the paper: ${p.title}`}
                     loading="lazy"
+                    decoding="async"
                     className="absolute inset-0 w-full h-full object-cover saturate-95 contrast-100"
                   />
                 )}

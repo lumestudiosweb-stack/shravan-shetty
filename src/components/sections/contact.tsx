@@ -18,7 +18,6 @@ export function Contact() {
                 transition={{ duration: 0.6 }}
                 className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-6 flex items-center gap-3"
               >
-                <span className="h-px w-10 bg-primary/50" />
                 Contact
               </motion.p>
               <motion.h2

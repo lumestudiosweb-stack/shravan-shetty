@@ -68,7 +68,7 @@ export function Stats() {
   return (
     <section className="border-y border-border bg-surface/40 backdrop-blur">
       <div className="container py-16 md:py-20">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6">
           {STATS.map((s, i) => (
             <motion.div
               key={s.label}

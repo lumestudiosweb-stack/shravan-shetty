@@ -45,8 +45,8 @@ export function Engagement() {
                 i === 0
                   ? "col-span-12 lg:col-span-8 group relative glass p-3 overflow-hidden"
                   : i === 1
-                  ? "col-span-6 lg:col-span-4 group relative glass p-3 overflow-hidden"
-                  : "col-span-6 lg:col-span-8 group relative glass p-3 overflow-hidden"
+                  ? "col-span-12 sm:col-span-6 lg:col-span-4 group relative glass p-3 overflow-hidden"
+                  : "col-span-12 sm:col-span-6 lg:col-span-8 group relative glass p-3 overflow-hidden"
               }
             >
               <div
@@ -55,8 +55,9 @@ export function Engagement() {
               >
                 <img
                   src={g.src}
-                  alt={g.title}
+                  alt={`${g.title} — Dr. Shravan Shetty at ${g.venue}, ${g.year}`}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-70 group-hover:opacity-30 transition-opacity" />
@@ -89,7 +90,6 @@ export function Engagement() {
             <span className="text-xs uppercase tracking-[0.18em] text-primary font-semibold">
               Memberships
             </span>
-            <span className="h-px flex-1 bg-border" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {AFFILIATIONS.map((a, i) => (

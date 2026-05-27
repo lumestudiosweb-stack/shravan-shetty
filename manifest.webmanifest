@@ -1,0 +1,21 @@
+{
+  "name": "Dr. Shravan Shetty — Orthodontist & Researcher",
+  "short_name": "Dr. Shetty",
+  "description": "Academic portfolio of Dr. Shravan Shetty, Assistant Professor of Orthodontics at MCODS Mangaluru.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8f6f1",
+  "theme_color": "#f8f6f1",
+  "lang": "en-IN",
+  "categories": ["medical", "education", "health"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

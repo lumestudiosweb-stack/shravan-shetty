@@ -35,9 +35,9 @@ export function Academic() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="glass overflow-hidden mb-14"
         >
-          <div className="grid grid-cols-1 md:grid-cols-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12">
             {/* Current role */}
-            <div className="md:col-span-5 p-8 md:p-12 border-b md:border-b-0 md:border-r border-border">
+            <div className="lg:col-span-5 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-border">
               <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-4">
                 Current Role
               </p>
@@ -76,7 +76,7 @@ export function Academic() {
             </div>
 
             {/* Teaching */}
-            <div className="md:col-span-4 p-8 md:p-12 border-b md:border-b-0 md:border-r border-border">
+            <div className="lg:col-span-4 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-border">
               <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-4">
                 Now Teaching
               </p>
@@ -96,7 +96,7 @@ export function Academic() {
             </div>
 
             {/* Qualifications */}
-            <div className="md:col-span-3 p-8 md:p-12">
+            <div className="lg:col-span-3 p-8 md:p-12">
               <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-4">
                 Qualifications
               </p>
@@ -126,7 +126,6 @@ export function Academic() {
         {/* Timeline */}
         <div className="mt-14">
           <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-7 flex items-center gap-3">
-            <span className="h-px w-10 bg-primary/40" />
             Path so far
           </p>
           <ol className="space-y-3">

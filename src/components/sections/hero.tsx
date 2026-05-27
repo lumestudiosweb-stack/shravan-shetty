@@ -34,7 +34,6 @@ export function Hero() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="flex items-center gap-3 mb-7 text-xs uppercase tracking-[0.18em] text-primary font-semibold"
             >
-              <span className="h-px w-10 bg-primary/50" />
               Orthodontist &middot; Academician &middot; Researcher
             </motion.div>
 
@@ -62,10 +61,10 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="mt-9 flex items-baseline flex-wrap gap-x-3 gap-y-1 font-display text-xl md:text-2xl"
+              className="mt-9 flex items-baseline flex-wrap gap-x-3 gap-y-1 font-display text-lg sm:text-xl md:text-2xl"
             >
               <span className="text-muted-foreground">A practice in</span>
-              <span className="relative inline-flex h-[1.4em] min-w-[280px] overflow-hidden align-baseline">
+              <span className="relative inline-flex h-[1.4em] w-full sm:w-auto min-w-[240px] sm:min-w-[280px] overflow-hidden align-baseline">
                 {titles.map((t, i) => (
                   <motion.span
                     key={i}
@@ -120,7 +119,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="mt-12 inline-flex flex-wrap items-center gap-x-5 gap-y-2 glass rounded-full px-6 py-3 text-sm text-muted-foreground"
+              className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-2 glass rounded-2xl sm:rounded-full px-5 sm:px-6 py-3 text-xs sm:text-sm text-muted-foreground max-w-fit"
             >
               <span className="text-foreground font-medium">MDS &middot; SDM Dharwad &middot; 2016</span>
               <span className="hidden sm:inline h-4 w-px bg-border" />
@@ -146,8 +145,12 @@ export function Hero() {
                 <div className="overflow-hidden rounded-[10px]" style={{ aspectRatio: "4 / 5" }}>
                   <img
                     src={DOCTOR.photo}
-                    alt={DOCTOR.fullName}
+                    alt="Portrait of Dr. Shravan Shetty, Assistant Professor of Orthodontics at Manipal College of Dental Sciences, Mangaluru"
                     loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    width={1254}
+                    height={1254}
                     className="w-full h-full object-cover saturate-95 contrast-100"
                   />
                 </div>
@@ -169,7 +172,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.85, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute -bottom-10 -left-4 sm:-left-10 max-w-[260px] glass p-5"
+                className="absolute -bottom-8 left-2 sm:-left-6 lg:-left-10 max-w-[240px] sm:max-w-[260px] glass p-4 sm:p-5"
               >
                 <Quote className="h-4 w-4 text-primary mb-3" />
                 <p className="font-display font-medium italic text-foreground leading-snug text-[17px]">

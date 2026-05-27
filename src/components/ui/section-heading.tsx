@@ -31,7 +31,6 @@ export function SectionHeading({
         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         className="flex items-center gap-3"
       >
-        <span className="h-px w-10 bg-primary/50" aria-hidden="true" />
         <span className="text-xs uppercase tracking-[0.18em] text-primary font-semibold">
           {eyebrow}
         </span>
