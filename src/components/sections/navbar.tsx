@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { DOCTOR } from "@/lib/doctor";
@@ -84,15 +84,6 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <a
-            href={`tel:${DOCTOR.phoneTel}`}
-            aria-label={`Call ${DOCTOR.phoneDisplay}`}
-            className="hidden sm:inline-flex items-center gap-2 rounded-full border border-primary/25 bg-card/60 backdrop-blur-md text-primary px-4 py-2.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
-          >
-            <Phone className="h-3.5 w-3.5" />
-            <span className="hidden lg:inline">{DOCTOR.phoneDisplay}</span>
-            <span className="lg:hidden">Call</span>
-          </a>
           <a
             href="#contact"
             className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:bg-primary/90 transition-colors"
