@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import { Calendar, Globe2, MapPin } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Calendar, ChevronLeft, ChevronRight, Globe2, MapPin, X } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   AFFILIATIONS,
@@ -9,6 +10,52 @@ import {
 } from "@/lib/doctor";
 
 export function Engagement() {
+  // Lightbox: index into LIGHTBOX_IMAGES (-1 = closed)
+  const LIGHTBOX_IMAGES = [
+    ...TEACHING_GALLERY.map((g) => ({ src: g.src, caption: g.title })),
+    ...GALLERY_PHOTOS.map((p) => ({ src: p.src, caption: "" })),
+    ...INTERNATIONAL_WORKSHOPS.filter((w) => !!w.photo).map((w) => ({
+      src: w.photo as string,
+      caption: w.title,
+    })),
+  ];
+  const [openIndex, setOpenIndex] = useState(-1);
+
+  const close = useCallback(() => setOpenIndex(-1), []);
+  const next = useCallback(
+    () =>
+      setOpenIndex((i) => (i < 0 ? -1 : (i + 1) % LIGHTBOX_IMAGES.length)),
+    [LIGHTBOX_IMAGES.length]
+  );
+  const prev = useCallback(
+    () =>
+      setOpenIndex((i) =>
+        i < 0 ? -1 : (i - 1 + LIGHTBOX_IMAGES.length) % LIGHTBOX_IMAGES.length
+      ),
+    [LIGHTBOX_IMAGES.length]
+  );
+
+  useEffect(() => {
+    if (openIndex < 0) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
+    };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [openIndex, close, next, prev]);
+
+  const open = (src: string) => {
+    const idx = LIGHTBOX_IMAGES.findIndex((img) => img.src === src);
+    if (idx >= 0) setOpenIndex(idx);
+  };
+
   return (
     <section id="engagement" className="section-pad relative">
       <div className="container">
@@ -54,9 +101,12 @@ export function Engagement() {
                   : "col-span-12 sm:col-span-6 lg:col-span-8 group relative glass p-3 overflow-hidden"
               }
             >
-              <div
-                className="relative w-full overflow-hidden rounded-lg border border-border"
+              <button
+                type="button"
+                onClick={() => open(g.src)}
+                className="relative block w-full overflow-hidden rounded-lg border border-border cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 style={{ aspectRatio: i === 0 ? "16/9" : i === 1 ? "4/5" : "16/8" }}
+                aria-label={`Open ${g.title}`}
               >
                 <img
                   src={g.src}
@@ -69,7 +119,7 @@ export function Engagement() {
                 <div className="absolute top-3 left-3 inline-flex items-center rounded-full bg-background/85 backdrop-blur px-3 py-1 text-[11px] uppercase tracking-[0.14em] text-primary font-semibold">
                   {g.kind}
                 </div>
-              </div>
+              </button>
               <figcaption className="flex items-end justify-between mt-3 px-1">
                 <div>
                   <p className="font-display text-base font-semibold text-foreground leading-tight">
@@ -89,7 +139,7 @@ export function Engagement() {
           ))}
         </div>
 
-        {/* Untitled photo gallery — no captions, no labels */}
+        {/* Untitled photo gallery — no captions, last row centered, click to enlarge */}
         {GALLERY_PHOTOS.length > 0 && (
           <div className="mb-20">
             <div className="flex items-center gap-3 mb-8">
@@ -97,10 +147,12 @@ export function Engagement() {
                 Gallery
               </span>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-5">
+            <div className="flex flex-wrap justify-center gap-4 lg:gap-5">
               {GALLERY_PHOTOS.map((p, i) => (
-                <motion.div
+                <motion.button
                   key={p.src}
+                  type="button"
+                  onClick={() => open(p.src)}
                   initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -109,8 +161,9 @@ export function Engagement() {
                     delay: (i % 4) * 0.06,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="group relative overflow-hidden rounded-lg border border-border bg-surface/40"
+                  className="group relative overflow-hidden rounded-lg border border-border bg-surface/40 cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-primary basis-[calc(50%-0.5rem)] sm:basis-[calc(33.333%-0.6667rem)] lg:basis-[calc(25%-0.9375rem)] max-w-[280px]"
                   style={{ aspectRatio: "4/5" }}
+                  aria-label="Open gallery photo"
                 >
                   <img
                     src={p.src}
@@ -119,7 +172,7 @@ export function Engagement() {
                     decoding="async"
                     className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                </motion.div>
+                </motion.button>
               ))}
             </div>
           </div>
@@ -149,9 +202,12 @@ export function Engagement() {
               >
                 {w.photo && (
                   <div className="col-span-12 md:col-span-3 lg:col-span-3">
-                    <div
-                      className="relative w-full overflow-hidden rounded-lg border border-border"
+                    <button
+                      type="button"
+                      onClick={() => open(w.photo!)}
+                      className="relative block w-full overflow-hidden rounded-lg border border-border cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                       style={{ aspectRatio: "4/3" }}
+                      aria-label={`Open ${w.title}`}
                     >
                       <img
                         src={w.photo}
@@ -160,7 +216,7 @@ export function Engagement() {
                         decoding="async"
                         className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
                       />
-                    </div>
+                    </button>
                   </div>
                 )}
                 <div className="col-span-12 md:col-span-2">
@@ -223,6 +279,85 @@ export function Engagement() {
           </div>
         </div>
       </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {openIndex >= 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm"
+            onClick={close}
+            role="dialog"
+            aria-modal="true"
+          >
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                close();
+              }}
+              className="absolute top-4 right-4 md:top-6 md:right-6 z-10 inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur text-white transition-colors"
+              aria-label="Close"
+            >
+              <X className="h-5 w-5" />
+            </button>
+
+            {LIGHTBOX_IMAGES.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    prev();
+                  }}
+                  className="absolute left-2 sm:left-4 md:left-6 z-10 inline-flex items-center justify-center h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur text-white transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
+                </button>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    next();
+                  }}
+                  className="absolute right-2 sm:right-4 md:right-6 z-10 inline-flex items-center justify-center h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur text-white transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
+                </button>
+              </>
+            )}
+
+            <motion.div
+              key={openIndex}
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="relative max-h-[88vh] max-w-[92vw] px-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={LIGHTBOX_IMAGES[openIndex].src}
+                alt={LIGHTBOX_IMAGES[openIndex].caption || "Gallery photo"}
+                className="block max-h-[88vh] max-w-full w-auto h-auto object-contain rounded-md shadow-2xl"
+              />
+              {LIGHTBOX_IMAGES[openIndex].caption && (
+                <p className="mt-3 text-center text-sm text-white/85 font-display">
+                  {LIGHTBOX_IMAGES[openIndex].caption}
+                </p>
+              )}
+              <p className="mt-1 text-center text-[11px] text-white/55 uppercase tracking-[0.16em]">
+                {openIndex + 1} / {LIGHTBOX_IMAGES.length}
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
