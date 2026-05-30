@@ -264,62 +264,19 @@ export const TEACHING_GALLERY = [
     kind: "Conference",
     year: "2020",
   },
-  {
-    src: "./images/photo-4.jpeg",
-    title: "Clinical Session",
-    venue: "Department of Orthodontics, MCODS Mangaluru",
-    kind: "Teaching",
-    year: "",
-  },
-  {
-    src: "./images/photo-5.jpeg",
-    title: "Academic Engagement",
-    venue: "MCODS Mangaluru",
-    kind: "Faculty",
-    year: "",
-  },
-  {
-    src: "./images/photo-6.jpeg",
-    title: "Postgraduate Mentorship",
-    venue: "MCODS Mangaluru",
-    kind: "Mentorship",
-    year: "",
-  },
-  {
-    src: "./images/photo-7.jpeg",
-    title: "Workshop Moment",
-    venue: "Practitioner Workshop",
-    kind: "Workshop",
-    year: "",
-  },
-  {
-    src: "./images/photo-8.jpeg",
-    title: "Conference Presentation",
-    venue: "Academic Conference",
-    kind: "Conference",
-    year: "",
-  },
-  {
-    src: "./images/photo-9.jpeg",
-    title: "Clinical Demonstration",
-    venue: "Hands-on Session",
-    kind: "Masterclass",
-    year: "",
-  },
-  {
-    src: "./images/photo-10.jpeg",
-    title: "Faculty Engagement",
-    venue: "MCODS Mangaluru",
-    kind: "Faculty",
-    year: "",
-  },
-  {
-    src: "./images/photo-11.jpeg",
-    title: "Academic Event",
-    venue: "MCODS Mangaluru",
-    kind: "Event",
-    year: "",
-  },
+];
+
+// Untitled photo gallery — clinical work and academic moments.
+// Captions intentionally omitted; add per-photo metadata here later
+// when the real titles/venues/years are confirmed.
+export const GALLERY_PHOTOS = [
+  { src: "./images/photo-4.jpeg" },
+  { src: "./images/photo-5.jpeg" },
+  { src: "./images/photo-6.jpeg" },
+  { src: "./images/photo-8.jpeg" },
+  { src: "./images/photo-9.jpeg" },
+  { src: "./images/photo-10.jpeg" },
+  { src: "./images/photo-11.jpeg" },
 ];
 
 export const RESEARCH_FOCUS = [

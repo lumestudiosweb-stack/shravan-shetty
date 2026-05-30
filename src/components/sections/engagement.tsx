@@ -3,6 +3,7 @@ import { Calendar, Globe2, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   AFFILIATIONS,
+  GALLERY_PHOTOS,
   INTERNATIONAL_WORKSHOPS,
   TEACHING_GALLERY,
 } from "@/lib/doctor";
@@ -32,9 +33,9 @@ export function Engagement() {
           </div>
         </div>
 
-        {/* Featured gallery (first 3) */}
-        <div className="grid grid-cols-12 gap-5 lg:gap-6 mb-6 lg:mb-8">
-          {TEACHING_GALLERY.slice(0, 3).map((g, i) => (
+        {/* Featured gallery — real venues + years */}
+        <div className="grid grid-cols-12 gap-5 lg:gap-6 mb-12 lg:mb-16">
+          {TEACHING_GALLERY.map((g, i) => (
             <motion.figure
               key={g.title}
               initial={{ opacity: 0, y: 24 }}
@@ -59,7 +60,7 @@ export function Engagement() {
               >
                 <img
                   src={g.src}
-                  alt={`${g.title} — Dr. Shravan Shetty at ${g.venue}${g.year ? ", " + g.year : ""}`}
+                  alt={`${g.title} — Dr. Shravan Shetty at ${g.venue}, ${g.year}`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
@@ -79,60 +80,48 @@ export function Engagement() {
                     {g.venue}
                   </p>
                 </div>
-                {g.year && (
-                  <span className="text-xs text-primary font-medium inline-flex items-center gap-1.5">
-                    <Calendar className="h-3 w-3" />
-                    {g.year}
-                  </span>
-                )}
+                <span className="text-xs text-primary font-medium inline-flex items-center gap-1.5">
+                  <Calendar className="h-3 w-3" />
+                  {g.year}
+                </span>
               </figcaption>
             </motion.figure>
           ))}
         </div>
 
-        {/* Remaining gallery (rest) */}
-        {TEACHING_GALLERY.length > 3 && (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6 mb-20">
-            {TEACHING_GALLERY.slice(3).map((g, i) => (
-              <motion.figure
-                key={g.src}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.6,
-                  delay: i * 0.06,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="group relative glass p-2.5 overflow-hidden"
-              >
-                <div
-                  className="relative w-full overflow-hidden rounded-lg border border-border"
+        {/* Untitled photo gallery — no captions, no labels */}
+        {GALLERY_PHOTOS.length > 0 && (
+          <div className="mb-20">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-xs uppercase tracking-[0.18em] text-primary font-semibold">
+                Gallery
+              </span>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-5">
+              {GALLERY_PHOTOS.map((p, i) => (
+                <motion.div
+                  key={p.src}
+                  initial={{ opacity: 0, y: 18 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: (i % 4) * 0.06,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                  className="group relative overflow-hidden rounded-lg border border-border bg-surface/40"
                   style={{ aspectRatio: "4/5" }}
                 >
                   <img
-                    src={g.src}
-                    alt={`${g.title} — Dr. Shravan Shetty at ${g.venue}`}
+                    src={p.src}
+                    alt="Dr. Shravan Shetty — clinical work"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/45 via-transparent to-transparent opacity-70 group-hover:opacity-30 transition-opacity" />
-                  <div className="absolute top-2.5 left-2.5 inline-flex items-center rounded-full bg-background/85 backdrop-blur px-2.5 py-0.5 text-[10px] uppercase tracking-[0.14em] text-primary font-semibold">
-                    {g.kind}
-                  </div>
-                </div>
-                <figcaption className="mt-2.5 px-1">
-                  <p className="font-display text-sm font-semibold text-foreground leading-tight">
-                    {g.title}
-                  </p>
-                  <p className="text-[11px] text-muted-foreground mt-0.5 inline-flex items-center gap-1.5">
-                    <MapPin className="h-3 w-3 text-primary" />
-                    {g.venue}
-                  </p>
-                </figcaption>
-              </motion.figure>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         )}
 
