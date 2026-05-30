@@ -138,6 +138,7 @@ export const INTERNATIONAL_WORKSHOPS = [
       "European School of Oral Rehabilitation, Implantology and Biomaterials (ESORIB)",
     location: "Madrid, Spain",
     date: "May 15 – 17, 2023",
+    photo: "./images/photo-1.jpeg",
   },
   {
     role: "Resource Person",
@@ -146,6 +147,7 @@ export const INTERNATIONAL_WORKSHOPS = [
     host: "Age Solutions s.r.l",
     location: "Pontedera, Italy",
     date: "December 8 – 9, 2023",
+    photo: "./images/photo-2.jpeg",
   },
   {
     role: "Presenter",
@@ -154,6 +156,7 @@ export const INTERNATIONAL_WORKSHOPS = [
     host: "International Conferences",
     location: "Singapore & Dubai",
     date: "2025 – 2026",
+    photo: "./images/photo-3.jpeg",
   },
 ];
 
@@ -260,6 +263,62 @@ export const TEACHING_GALLERY = [
     venue: "IOS · SMILE 2020",
     kind: "Conference",
     year: "2020",
+  },
+  {
+    src: "./images/photo-4.jpeg",
+    title: "Clinical Session",
+    venue: "Department of Orthodontics, MCODS Mangaluru",
+    kind: "Teaching",
+    year: "",
+  },
+  {
+    src: "./images/photo-5.jpeg",
+    title: "Academic Engagement",
+    venue: "MCODS Mangaluru",
+    kind: "Faculty",
+    year: "",
+  },
+  {
+    src: "./images/photo-6.jpeg",
+    title: "Postgraduate Mentorship",
+    venue: "MCODS Mangaluru",
+    kind: "Mentorship",
+    year: "",
+  },
+  {
+    src: "./images/photo-7.jpeg",
+    title: "Workshop Moment",
+    venue: "Practitioner Workshop",
+    kind: "Workshop",
+    year: "",
+  },
+  {
+    src: "./images/photo-8.jpeg",
+    title: "Conference Presentation",
+    venue: "Academic Conference",
+    kind: "Conference",
+    year: "",
+  },
+  {
+    src: "./images/photo-9.jpeg",
+    title: "Clinical Demonstration",
+    venue: "Hands-on Session",
+    kind: "Masterclass",
+    year: "",
+  },
+  {
+    src: "./images/photo-10.jpeg",
+    title: "Faculty Engagement",
+    venue: "MCODS Mangaluru",
+    kind: "Faculty",
+    year: "",
+  },
+  {
+    src: "./images/photo-11.jpeg",
+    title: "Academic Event",
+    venue: "MCODS Mangaluru",
+    kind: "Event",
+    year: "",
   },
 ];
 
