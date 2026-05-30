@@ -90,7 +90,7 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="mt-7 max-w-xl text-base md:text-lg leading-relaxed text-muted-foreground"
             >
-              Assistant Professor at the {DOCTOR.department}, {DOCTOR.institution}, {DOCTOR.city}. {DOCTOR.shortTagline}
+              Consultant Orthodontist. Associate Professor at the {DOCTOR.department}, {DOCTOR.institution}, {DOCTOR.city}. {DOCTOR.shortTagline}
             </motion.p>
 
             {/* CTAs */}
@@ -121,9 +121,9 @@ export function Hero() {
               transition={{ delay: 1, duration: 0.6 }}
               className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-2 glass rounded-2xl sm:rounded-full px-5 sm:px-6 py-3 text-xs sm:text-sm text-muted-foreground max-w-fit"
             >
-              <span className="text-foreground font-medium">MDS &middot; SDM Dharwad &middot; 2016</span>
+              <span className="text-foreground font-medium">Invisalign Certified</span>
               <span className="hidden sm:inline h-4 w-px bg-border" />
-              <span className="hidden sm:inline">6 Peer-Reviewed Publications</span>
+              <span className="hidden sm:inline">Coordinator — Center for Digital Dentistry</span>
               <span className="hidden md:inline h-4 w-px bg-border" />
               <span className="hidden md:inline">{DOCTOR.practiceYears}+ Years in Practice</span>
             </motion.div>
@@ -145,7 +145,7 @@ export function Hero() {
                 <div className="overflow-hidden rounded-[10px]" style={{ aspectRatio: "4 / 5" }}>
                   <img
                     src={DOCTOR.photo}
-                    alt="Portrait of Dr. Shravan Shetty, Assistant Professor of Orthodontics at Manipal College of Dental Sciences, Mangaluru"
+                    alt="Portrait of Dr. Shravan Shetty, Associate Professor & Consultant Orthodontist at Manipal College of Dental Sciences, Mangaluru"
                     loading="eager"
                     decoding="async"
                     fetchPriority="high"
@@ -154,16 +154,13 @@ export function Hero() {
                     className="w-full h-full object-cover saturate-95 contrast-100"
                   />
                 </div>
-                <div className="px-2 pt-4 pb-2 flex items-center justify-between">
-                  <div>
-                    <p className="font-display text-foreground text-[15px] font-semibold leading-tight">
-                      Dr. Shravan Shetty
-                    </p>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      Assistant Professor &middot; Orthodontics
-                    </p>
-                  </div>
-                  <span className="text-xs text-primary font-medium">est. 2017</span>
+                <div className="px-2 pt-4 pb-2">
+                  <p className="font-display text-foreground text-[15px] font-semibold leading-tight">
+                    Dr. Shravan Shetty
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Consultant Orthodontist &middot; Associate Professor
+                  </p>
                 </div>
               </div>
 

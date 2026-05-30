@@ -42,13 +42,13 @@ const STATS = [
     label: "Years in Faculty Practice",
     value: DOCTOR.practiceYears,
     suffix: "+",
-    note: "Continuous since 2017",
+    note: "",
   },
   {
     label: "Peer-Reviewed Publications",
-    value: 6,
-    suffix: "",
-    note: "Across five journals",
+    value: 30,
+    suffix: "+",
+    note: "",
   },
   {
     label: "Areas of Active Research",
@@ -58,9 +58,9 @@ const STATS = [
   },
   {
     label: "Professional Affiliations",
-    value: 3,
+    value: 4,
     suffix: "",
-    note: "IOS, IDA, ISPRP",
+    note: "IOS, IDA, MOSG, DKCA",
   },
 ];
 
@@ -89,7 +89,11 @@ export function Stats() {
               <p className="mt-3 text-xs uppercase tracking-[0.16em] text-muted-foreground font-semibold">
                 {s.label}
               </p>
-              <p className="mt-1.5 text-[13px] text-muted-foreground/80">{s.note}</p>
+              {s.note && (
+                <p className="mt-1.5 text-[13px] text-muted-foreground/80">
+                  {s.note}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

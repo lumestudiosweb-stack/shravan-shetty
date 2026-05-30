@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, Globe2, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { AFFILIATIONS, TEACHING_GALLERY } from "@/lib/doctor";
+import {
+  AFFILIATIONS,
+  INTERNATIONAL_WORKSHOPS,
+  TEACHING_GALLERY,
+} from "@/lib/doctor";
 
 export function Engagement() {
   return (
@@ -84,6 +88,52 @@ export function Engagement() {
           ))}
         </div>
 
+        {/* International Workshops */}
+        <div className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <Globe2 className="h-3.5 w-3.5 text-primary" />
+            <span className="text-xs uppercase tracking-[0.18em] text-primary font-semibold">
+              International Workshops · Resource Person · Presentations
+            </span>
+          </div>
+          <ol className="space-y-3">
+            {INTERNATIONAL_WORKSHOPS.map((w, i) => (
+              <motion.li
+                key={`${w.title}-${w.date}`}
+                initial={{ opacity: 0, x: -16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  duration: 0.6,
+                  delay: i * 0.08,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="group glass glass-hover grid grid-cols-12 gap-4 md:gap-6 items-start px-6 md:px-7 py-6"
+              >
+                <div className="col-span-12 md:col-span-2">
+                  <span className="chip">{w.role}</span>
+                </div>
+                <div className="col-span-12 md:col-span-7">
+                  <p className="font-display text-lg font-semibold text-foreground leading-snug">
+                    {w.title}
+                  </p>
+                  <p className="text-sm text-muted-foreground/85 mt-1.5 leading-relaxed">
+                    {w.host}
+                  </p>
+                  <p className="text-xs text-muted-foreground/70 mt-1 inline-flex items-center gap-1.5">
+                    <MapPin className="h-3 w-3 text-primary" />
+                    {w.location}
+                  </p>
+                </div>
+                <div className="col-span-12 md:col-span-3 text-sm text-primary font-medium md:text-right inline-flex md:justify-end items-center gap-1.5">
+                  <Calendar className="h-3 w-3" />
+                  {w.date}
+                </div>
+              </motion.li>
+            ))}
+          </ol>
+        </div>
+
         {/* Affiliations */}
         <div>
           <div className="flex items-center gap-3 mb-8">
@@ -91,7 +141,7 @@ export function Engagement() {
               Memberships
             </span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {AFFILIATIONS.map((a, i) => (
               <motion.div
                 key={a.name}

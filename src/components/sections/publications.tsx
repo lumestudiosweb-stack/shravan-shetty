@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Filter } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Filter, GraduationCap } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { PUBLICATIONS, type Publication } from "@/lib/doctor";
+import { DOCTOR, PUBLICATIONS, type Publication } from "@/lib/doctor";
 import { cn } from "@/lib/utils";
 
 const TAG_LABELS: Record<Publication["tag"], string> = {
@@ -45,11 +45,22 @@ export function Publications() {
               }
             />
           </div>
-          <div className="col-span-12 lg:col-span-5 flex items-end">
+          <div className="col-span-12 lg:col-span-5 flex flex-col items-start lg:items-end justify-end gap-4">
             <p className="text-muted-foreground leading-relaxed">
               Tap a row to expand and read the authors, source and abstract where
-              available.
+              available. A featured selection appears below — for the complete
+              30+ paper list, view the Google Scholar profile.
             </p>
+            <a
+              href={DOCTOR.googleScholar}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary hover:bg-primary/10 transition-colors"
+            >
+              <GraduationCap className="h-3.5 w-3.5" />
+              View full list on Google Scholar
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
           </div>
         </div>
 

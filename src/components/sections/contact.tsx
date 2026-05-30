@@ -38,8 +38,8 @@ export function Contact() {
                 transition={{ duration: 0.7, delay: 0.18 }}
                 className="mt-7 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl"
               >
-                Open to research partnerships in digital orthodontics, invited
-                speaking, postgraduate masterclasses, and academic conversations on
+                Open to research partnerships in digital orthodontics,
+                postgraduate masterclasses, and academic conversations on
                 aligner therapy and biomechanics.
               </motion.p>
 
@@ -84,6 +84,12 @@ export function Contact() {
                 icon={<AtSign className="h-3.5 w-3.5" />}
                 primary={DOCTOR.email}
                 href={`mailto:${DOCTOR.email}`}
+              />
+              <ContactRow
+                kind="Email · Digital Orthodontic World"
+                icon={<AtSign className="h-3.5 w-3.5" />}
+                primary={DOCTOR.secondaryEmail}
+                href={`mailto:${DOCTOR.secondaryEmail}`}
               />
               <ContactRow
                 kind="Department"

@@ -42,7 +42,8 @@ export function Academic() {
                 Current Role
               </p>
               <h3 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-foreground">
-                Assistant Professor
+                Consultant Orthodontist
+                <span className="block">Associate Professor</span>
               </h3>
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 {DOCTOR.department}
@@ -113,9 +114,14 @@ export function Academic() {
                     <p className="text-muted-foreground text-sm mt-1 leading-snug">
                       {q.field}
                     </p>
-                    <p className="text-xs text-muted-foreground/70 mt-2">
+                    <p className="text-xs text-muted-foreground/70 mt-2 leading-snug">
                       {q.institution} · {q.year}
                     </p>
+                    {q.affiliation && (
+                      <p className="text-[11px] text-muted-foreground/60 mt-1 leading-snug italic">
+                        {q.affiliation}
+                      </p>
+                    )}
                   </li>
                 ))}
               </ul>

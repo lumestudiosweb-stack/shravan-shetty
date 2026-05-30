@@ -3,18 +3,23 @@ export const DOCTOR = {
   firstName: "Shravan",
   lastName: "Shetty",
   fullName: "Dr. Shravan Shetty",
-  title: "Assistant Professor",
+  title: "Associate Professor",
+  secondaryTitle: "Consultant Orthodontist",
+  coordinatorRole: "Coordinator — Center for Digital Dentistry",
   department: "Orthodontics & Dentofacial Orthopaedics",
   institution: "Manipal College of Dental Sciences",
   institutionShort: "MCODS",
   city: "Mangaluru",
   startYear: 2017,
-  practiceYears: new Date().getFullYear() - 2017,
+  practiceYears: 10,
   email: "shravan.shetty@manipal.edu",
+  secondaryEmail: "Digitalorthodonticworld@gmail.com",
   phoneDisplay: "+91 74111 97827",
   phoneTel: "+917411197827",
   linkedin: "https://linkedin.com/in/dr-shravan-shetty-a0a016276",
   linkedinHandle: "dr-shravan-shetty",
+  googleScholar:
+    "https://scholar.google.com/citations?user=f4Vs1jwAAAAJ&hl=en",
   tagline:
     "Bridging clinical orthodontics with digital workflow design — biomechanics, aligners, and a research practice rooted in evidence.",
   shortTagline:
@@ -65,16 +70,30 @@ export const QUALIFICATIONS = [
   {
     degree: "MDS",
     field: "Orthodontics & Dentofacial Orthopaedics",
-    institution: "SDM College of Dental Sciences",
-    location: "Dharwad",
-    year: 2016,
+    institution:
+      "SDMCDS (Sri Dharmasthala Manjunatheshwara College of Dental Sciences)",
+    location: "Dharwad, India",
+    affiliation:
+      "Affiliated to Rajiv Gandhi University of Health Sciences, Karnataka, India",
+    year: "2013 – 2016",
   },
   {
     degree: "BDS",
     field: "Bachelor of Dental Surgery",
-    institution: "Yenepoya Dental College",
-    location: "RGUHS",
-    year: 2012,
+    institution: "Yenepoya Dental College, Deralakatte, Mangalore, India",
+    location: "Mangalore",
+    affiliation:
+      "Affiliated to Rajiv Gandhi University of Health Sciences, Karnataka, India",
+    year: "2007 – 2012",
+  },
+  {
+    degree: "PGCP",
+    field: "Post Graduate Certificate Program in Data Science and Machine Learning",
+    institution: "Manipal Institute of Technology, Manipal",
+    location: "Manipal",
+    affiliation:
+      "Affiliated to Manipal Academy of Higher Education, Manipal, Karnataka, India",
+    year: "2025",
   },
 ];
 
@@ -97,10 +116,44 @@ export const AFFILIATIONS = [
     note: "Premier body of dental professionals in India",
   },
   {
-    name: "5th National ISPRP Conference",
-    short: "ISPRP 2012",
-    status: "Organising Committee",
-    note: "Mangalore, Karnataka · 2012",
+    name: "Mangalore Orthodontic Study Group",
+    short: "MOSG",
+    status: "Member",
+    note: "Regional study group for orthodontic practice & research",
+  },
+  {
+    name: "Dakshina Kannada Cosmetologists Association",
+    short: "DKCA",
+    status: "Member",
+    note: "Regional association of cosmetic dental professionals",
+  },
+];
+
+export const INTERNATIONAL_WORKSHOPS = [
+  {
+    role: "Resource Person",
+    title:
+      "Orthodontic Clear Aligners — International Workshop",
+    host:
+      "European School of Oral Rehabilitation, Implantology and Biomaterials (ESORIB)",
+    location: "Madrid, Spain",
+    date: "May 15 – 17, 2023",
+  },
+  {
+    role: "Resource Person",
+    title:
+      "International Workshop on Orthodontic Clear Aligners",
+    host: "Age Solutions s.r.l",
+    location: "Pontedera, Italy",
+    date: "December 8 – 9, 2023",
+  },
+  {
+    role: "Presenter",
+    title:
+      "Association of Orthodontists Singapore Congress 2025 & AEEDEC Dubai 2026",
+    host: "International Conferences",
+    location: "Singapore & Dubai",
+    date: "2025 – 2026",
   },
 ];
 
@@ -221,7 +274,7 @@ export const TIMELINE = [
   {
     year: 2017,
     end: "present",
-    title: "Assistant Professor",
+    title: "Associate Professor & Consultant Orthodontist",
     org: "Manipal College of Dental Sciences",
     location: "Mangaluru",
     detail:
