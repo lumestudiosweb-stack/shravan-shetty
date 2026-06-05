@@ -90,7 +90,7 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="mt-7 max-w-xl text-base md:text-lg leading-relaxed text-muted-foreground"
             >
-              Consultant Orthodontist. Associate Professor at the {DOCTOR.department}, {DOCTOR.institution}, {DOCTOR.city}. {DOCTOR.shortTagline}
+              Dr. Shravan Shetty is a Consultant Orthodontist specializing in braces, invisible braces, and clear aligner treatments including Invisalign, Spark. With a focus on precision, comfort, and digital smile correction, he provides orthodontic consultations and treatments across leading dental clinics in Mangalore, Surathkal, Udupi, and Hubli. Dr. Shravan is known for his patient-centric approach, advanced digital planning, and experience in modern orthodontic care. Book a consultation to explore customized options for teeth straightening and confident smiles.
             </motion.p>
 
             {/* CTAs */}
@@ -173,7 +173,7 @@ export function Hero() {
               >
                 <Quote className="h-4 w-4 text-primary mb-3" />
                 <p className="font-display font-medium italic text-foreground leading-snug text-[17px]">
-                  "Precision is a discipline, not an event."
+                  "Trusted Care. Thoughtful Treatment. Beautiful Smiles"
                 </p>
                 <p className="text-xs text-muted-foreground mt-3">— Dr. Shravan Shetty</p>
               </motion.div>

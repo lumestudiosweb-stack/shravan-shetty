@@ -14,10 +14,6 @@ export function Engagement() {
   const LIGHTBOX_IMAGES = [
     ...TEACHING_GALLERY.map((g) => ({ src: g.src, caption: g.title })),
     ...GALLERY_PHOTOS.map((p) => ({ src: p.src, caption: "" })),
-    ...INTERNATIONAL_WORKSHOPS.filter((w) => !!w.photo).map((w) => ({
-      src: w.photo as string,
-      caption: w.title,
-    })),
   ];
   const [openIndex, setOpenIndex] = useState(-1);
 
@@ -200,25 +196,6 @@ export function Engagement() {
                 }}
                 className="group glass glass-hover grid grid-cols-12 gap-4 md:gap-6 items-center p-3 md:p-4"
               >
-                {w.photo && (
-                  <div className="col-span-12 md:col-span-3 lg:col-span-3">
-                    <button
-                      type="button"
-                      onClick={() => open(w.photo!)}
-                      className="relative block w-full overflow-hidden rounded-lg border border-border cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                      style={{ aspectRatio: "4/3" }}
-                      aria-label={`Open ${w.title}`}
-                    >
-                      <img
-                        src={w.photo}
-                        alt={`${w.title} — ${w.host}, ${w.location}`}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover saturate-95 contrast-100 transition-transform duration-700 group-hover:scale-[1.03]"
-                      />
-                    </button>
-                  </div>
-                )}
                 <div className="col-span-12 md:col-span-2">
                   <span className="chip">{w.role}</span>
                 </div>

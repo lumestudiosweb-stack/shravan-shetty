@@ -3,7 +3,6 @@ import { Hero } from "@/components/sections/hero";
 import { Disciplines } from "@/components/sections/disciplines";
 import { Stats } from "@/components/sections/stats";
 import { Academic } from "@/components/sections/academic";
-import { Research } from "@/components/sections/research";
 import { Publications } from "@/components/sections/publications";
 import { Engagement } from "@/components/sections/engagement";
 import { Contact } from "@/components/sections/contact";
@@ -18,7 +17,6 @@ export default function App() {
         <Disciplines />
         <Stats />
         <Academic />
-        <Research />
         <Publications />
         <Engagement />
         <Contact />

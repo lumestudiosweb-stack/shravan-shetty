@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, GraduationCap, MapPin, Users } from "lucide-react";
+import { Building2, GraduationCap, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DOCTOR, QUALIFICATIONS, TEACHING, TIMELINE } from "@/lib/doctor";
 
@@ -22,8 +22,7 @@ export function Academic() {
           <div className="col-span-12 lg:col-span-5 flex items-end">
             <p className="text-muted-foreground leading-relaxed">
               Shaping postgraduate orthodontists alongside undergraduate clinical
-              instruction — and contributing to institutional governance through the
-              departmental infection control committee.
+              instruction at MCODS, Mangaluru.
             </p>
           </div>
         </div>
@@ -62,11 +61,6 @@ export function Academic() {
                   icon={<MapPin className="h-3.5 w-3.5" />}
                   label="Location"
                   value={`${DOCTOR.city}, Karnataka`}
-                />
-                <Row
-                  icon={<Users className="h-3.5 w-3.5" />}
-                  label="Committee"
-                  value="Infection Control · Member"
                 />
                 <Row
                   icon={<GraduationCap className="h-3.5 w-3.5" />}

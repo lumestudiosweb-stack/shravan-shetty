@@ -7,7 +7,6 @@ import { DOCTOR } from "@/lib/doctor";
 const LINKS = [
   { href: "#disciplines", label: "Disciplines" },
   { href: "#academic", label: "Academic" },
-  { href: "#research", label: "Research" },
   { href: "#publications", label: "Publications" },
   { href: "#engagement", label: "Engagement" },
   { href: "#contact", label: "Contact" },
@@ -52,7 +51,7 @@ export function Navbar() {
               {DOCTOR.fullName}
             </span>
             <span className="text-[11px] text-muted-foreground tracking-wide">
-              Orthodontics &middot; MCODS Mangaluru
+              Orthodontics
             </span>
           </div>
         </a>

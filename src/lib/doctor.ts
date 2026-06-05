@@ -30,31 +30,31 @@ export const DOCTOR = {
 export const SPECIALTIES = [
   {
     code: "01",
-    title: "Clear Aligner Therapy",
+    title: "Trusted Care",
     blurb:
-      "Digital case planning, attachment design, staging and clinical finishing across the full aligner workflow.",
-    keywords: ["staging", "attachments", "refinement"],
+      "Every treatment begins with listening, understanding patient concerns, and building a relationship based on trust, transparency, and ethical decision-making.",
+    keywords: ["trust", "ethics", "communication"],
   },
   {
     code: "02",
-    title: "Orthodontic Biomechanics",
+    title: "Thoughtful Treatment",
     blurb:
-      "Force-system design, anchorage planning, bracket prescription and mechanics tailored to each malocclusion.",
-    keywords: ["forces", "moments", "anchorage"],
+      "Comprehensive diagnosis and individualized treatment planning ensure that every patient receives care tailored to their unique needs and goals.",
+    keywords: ["planning", "precision", "personalization"],
   },
   {
     code: "03",
-    title: "Lingual Orthodontics",
+    title: "Modern Orthodontics",
     blurb:
-      "Aesthetic appliance therapy hidden behind the teeth — indirect bonding, customised mechanics and bite management.",
-    keywords: ["indirect bonding", "customisation", "aesthetics"],
+      "Utilizing contemporary orthodontic solutions tailored to each patient's needs, lifestyle, and treatment goals.",
+    keywords: ["Invisalign", "Spark", "Clear Braces"],
   },
   {
     code: "04",
-    title: "Micro-Implant Research",
+    title: "Beautiful Smiles",
     blurb:
-      "Resonance frequency analysis, primary stability evaluation and in-vivo behaviour of orthodontic mini-implants.",
-    keywords: ["RFA", "stability", "in-vivo"],
+      "Creating healthy, functional, and confident smiles that enhance both oral health and overall well-being.",
+    keywords: ["confidence", "aesthetics", "wellness"],
   },
 ];
 
@@ -138,7 +138,6 @@ export const INTERNATIONAL_WORKSHOPS = [
       "European School of Oral Rehabilitation, Implantology and Biomaterials (ESORIB)",
     location: "Madrid, Spain",
     date: "May 15 – 17, 2023",
-    photo: "./images/photo-1.jpeg",
   },
   {
     role: "Resource Person",
@@ -147,7 +146,6 @@ export const INTERNATIONAL_WORKSHOPS = [
     host: "Age Solutions s.r.l",
     location: "Pontedera, Italy",
     date: "December 8 – 9, 2023",
-    photo: "./images/photo-2.jpeg",
   },
   {
     role: "Presenter",
@@ -156,7 +154,6 @@ export const INTERNATIONAL_WORKSHOPS = [
     host: "International Conferences",
     location: "Singapore & Dubai",
     date: "2025 – 2026",
-    photo: "./images/photo-3.jpeg",
   },
 ];
 
@@ -294,7 +291,7 @@ export const TIMELINE = [
     org: "Manipal College of Dental Sciences",
     location: "Mangaluru",
     detail:
-      "Faculty teaching, research supervision, infection control committee, and clinical practice.",
+      "Faculty teaching, research supervision, and clinical practice.",
   },
   {
     year: 2016,
