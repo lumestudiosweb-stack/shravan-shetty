@@ -27,9 +27,9 @@ export function Contact() {
                 transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                 className="display-h2 text-balance"
               >
-                For academic <span className="text-gradient">collaboration,</span>
+                For orthodontic consultations, academic <span className="text-gradient">collaborations,</span>
                 <br />
-                research, speaking &amp; teaching.
+                research partnerships, and professional enquiries.
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 18 }}
@@ -38,9 +38,7 @@ export function Contact() {
                 transition={{ duration: 0.7, delay: 0.18 }}
                 className="mt-7 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl"
               >
-                Open to research partnerships in digital orthodontics,
-                postgraduate masterclasses, and academic conversations on
-                aligner therapy and biomechanics.
+                Whether you are seeking orthodontic treatment or exploring opportunities for academic and research collaboration, feel free to get in touch.
               </motion.p>
 
               <div className="mt-10 flex flex-wrap gap-3">

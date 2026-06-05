@@ -8,7 +8,6 @@ const COLS = [
       { href: "#home", label: "Home" },
       { href: "#disciplines", label: "Disciplines" },
       { href: "#academic", label: "Academic" },
-      { href: "#research", label: "Research" },
     ],
   },
   {
@@ -34,24 +33,7 @@ export function Footer() {
     <footer className="relative border-t border-border bg-surface/60">
       <div className="container py-16 md:py-24">
         <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-12 lg:col-span-6">
-            <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-6">
-              An Academic Portfolio
-            </p>
-            <h2 className="font-display font-bold tracking-tight leading-[0.95] text-5xl md:text-7xl text-foreground">
-              {DOCTOR.firstName}
-              <br />
-              <span className="text-gradient italic font-medium">
-                {DOCTOR.lastName}.
-              </span>
-            </h2>
-            <p className="mt-8 text-muted-foreground max-w-md leading-relaxed">
-              An orthodontic practice bridging clinical care with digital workflow
-              research from Mangaluru.
-            </p>
-          </div>
-
-          <div className="col-span-12 lg:col-span-6 grid grid-cols-3 gap-6">
+          <div className="col-span-12 grid grid-cols-3 gap-6">
             {COLS.map((c) => (
               <div key={c.title}>
                 <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground/80 font-semibold mb-4">
