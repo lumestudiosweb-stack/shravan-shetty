@@ -121,12 +121,6 @@ export const AFFILIATIONS = [
     status: "Member",
     note: "Regional study group for orthodontic practice & research",
   },
-  {
-    name: "Dakshina Kannada Cosmetologists Association",
-    short: "DKCA",
-    status: "Member",
-    note: "Regional association of cosmetic dental professionals",
-  },
 ];
 
 export const INTERNATIONAL_WORKSHOPS = [
