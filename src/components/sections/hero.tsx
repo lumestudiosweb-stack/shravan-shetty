@@ -61,7 +61,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="mt-9 flex items-baseline flex-wrap gap-x-3 gap-y-1 font-display text-lg sm:text-xl md:text-2xl"
+              className="mt-4 flex items-baseline flex-wrap gap-x-3 gap-y-1 font-display text-lg sm:text-xl md:text-2xl"
             >
               <span className="text-muted-foreground">A practice in</span>
               <span className="relative inline-flex h-[1.4em] w-full sm:w-auto min-w-[240px] sm:min-w-[280px] overflow-hidden align-baseline">
