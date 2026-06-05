@@ -68,7 +68,7 @@ export function Hero() {
                 {titles.map((t, i) => (
                   <motion.span
                     key={i}
-                    className="absolute font-semibold text-primary"
+                    className="absolute bottom-0 font-semibold text-primary"
                     initial={{ opacity: 0, y: "-130%" }}
                     transition={{ type: "spring", stiffness: 55, damping: 14 }}
                     animate={
@@ -159,7 +159,7 @@ export function Hero() {
                     Dr. Shravan Shetty
                   </p>
                   <p className="text-xs text-muted-foreground mt-0.5">
-                    Consultant Orthodontist &middot; Associate Professor
+                    Consultant Orthodontist
                   </p>
                 </div>
               </div>
