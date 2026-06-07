@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Building2, GraduationCap, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { DOCTOR, QUALIFICATIONS, TEACHING, TIMELINE } from "@/lib/doctor";
+import { DOCTOR, QUALIFICATIONS, TEACHING } from "@/lib/doctor";
 
 export function Academic() {
   return (
@@ -123,48 +123,6 @@ export function Academic() {
           </div>
         </motion.div>
 
-        {/* Timeline */}
-        <div className="mt-14">
-          <p className="text-xs uppercase tracking-[0.18em] text-primary font-semibold mb-7 flex items-center gap-3">
-            Path so far
-          </p>
-          <ol className="space-y-3">
-            {TIMELINE.map((t, i) => (
-              <motion.li
-                key={`${t.year}-${t.title}`}
-                initial={{ opacity: 0, x: -16 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{
-                  duration: 0.6,
-                  delay: i * 0.08,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="group glass glass-hover grid grid-cols-12 gap-4 md:gap-8 items-center px-6 md:px-7 py-5"
-              >
-                <div className="col-span-3 md:col-span-2">
-                  <span className="block font-display text-2xl font-semibold text-foreground leading-none num-tab">
-                    {t.year}
-                  </span>
-                  <span className="block text-[11px] text-muted-foreground/70 mt-1 tracking-wide">
-                    → {t.end}
-                  </span>
-                </div>
-                <div className="col-span-9 md:col-span-7">
-                  <p className="font-display text-lg font-semibold text-foreground">
-                    {t.title}
-                  </p>
-                  <p className="text-sm text-muted-foreground/80 mt-1">
-                    {t.org} · {t.location}
-                  </p>
-                </div>
-                <div className="hidden md:block md:col-span-3 text-sm text-muted-foreground/70">
-                  {t.detail}
-                </div>
-              </motion.li>
-            ))}
-          </ol>
-        </div>
       </div>
     </section>
   );
