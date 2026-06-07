@@ -261,6 +261,10 @@ export const TEACHING_GALLERY = [
 // Captions intentionally omitted; add per-photo metadata here later
 // when the real titles/venues/years are confirmed.
 export const GALLERY_PHOTOS = [
+  { src: "./images/photo-12.jpeg" },
+  { src: "./images/photo-13.jpeg" },
+  { src: "./images/photo-14.jpeg" },
+  { src: "./images/photo-15.jpeg" },
   { src: "./images/photo-4.jpeg" },
   { src: "./images/photo-5.jpeg" },
   { src: "./images/photo-6.jpeg" },
