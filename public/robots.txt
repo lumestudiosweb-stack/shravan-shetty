@@ -1,5 +1,5 @@
 # Dr. Shravan Shetty — academic portfolio
-# https://shravan-shetty.vercel.app/
+# https://www.drshravanshetty.com/
 
 User-agent: *
 Allow: /
@@ -26,4 +26,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://shravan-shetty.vercel.app/sitemap.xml
+Sitemap: https://www.drshravanshetty.com/sitemap.xml
